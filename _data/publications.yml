@@ -5,9 +5,6 @@ main:
     conference: Proceedings of SemEval 2019
     year: 2019
     pdf: https://aclanthology.org/S19-2069.pdf
-    code: 
-    bibtex:
-    image: 
 
   - title: "The Effect of Translationese in Machine Translation Test Sets"
     authors: <strong>Mike Zhang</strong>, Antonio Toral
@@ -15,9 +12,6 @@ main:
     conference: Proceedings of WMT 2019
     year: 2019
     pdf: https://aclanthology.org/W19-5208.pdf
-    code: 
-    bibtex:
-    image: 
 
   - title: "Cartography Active Learning"
     authors: <strong>Mike Zhang</strong>, Barbara Plank
@@ -26,8 +20,6 @@ main:
     year: 2021
     pdf: https://aclanthology.org/2021.findings-emnlp.36v2.pdf
     code: https://github.com/jjzha/cal
-    bibtex:
-    image: 
 
   - title: "De-identification of Privacy-related Entities in Job Postings"
     authors: Kristian Nørgaard Jensen, <strong>Mike Zhang</strong>, Barbara Plank
@@ -35,9 +27,6 @@ main:
     conference: Proceedings of NoDaLiDa 2021
     year: 2021
     pdf: https://aclanthology.org/2021.nodalida-main.21.pdf
-    code: 
-    bibtex:
-    image: 
 
   - title: "Experimental Standards for Deep Learning in Natural Language Processing Research"
     authors: Dennis Ulmer, Elisa Bassignana, Max Müller-Eberstein, Daniel Varab, <strong>Mike Zhang</strong>, Christian Hardmeier, Barbara Plank
@@ -45,9 +34,6 @@ main:
     conference: Findings of the Association for Computational Linguistics: EMNLP 2022
     year: 2022
     pdf: https://aclanthology.org/2022.findings-emnlp.196.pdf
-    code: 
-    bibtex:
-    image: 
 
   - title: "SkillSpan: Hard and Soft Skill Extraction from English Job Postings"
     authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank
@@ -56,8 +42,6 @@ main:
     year: 2022
     pdf: https://aclanthology.org/2022.naacl-main.366.pdf
     code: https://github.com/kris927b/SkillSpan
-    bibtex: 
-    image: 
 
   - title: "Kompetencer: Fine-grained Skill Classification in Danish Job Postings via Distant Supervision and Transfer Learning"
     authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Barbara Plank
@@ -65,19 +49,12 @@ main:
     conference: Proceedings of LREC 2022
     year: 2022
     pdf: https://aclanthology.org/2022.lrec-1.46.pdf
-    code: 
-    bibtex: 
-    image: 
 
   - title: "Skill Extraction from Job Postings using Weak Supervision"
     authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Rob van der Goot, Barbara Plank
     conference_short: RecSysHR2022
     conference: Proceedings of RecSysHR'22 (RecSys2022 Workshop)
     year: 2022
-    pdf: 
-    code: 
-    bibtex: 
-    image: 
 
   - title: "Evidence > Intuition: Transferability Estimation for Encoder Selection"
     authors: Elisa Bassignana, Max Müller-Eberstein, <strong>Mike Zhang</strong>, Barbara Plank
@@ -85,9 +62,6 @@ main:
     conference: Proceedings of EMNLP 2022
     year: 2022
     pdf: https://aclanthology.org/2022.emnlp-main.283.pdf
-    code: 
-    bibtex: 
-    image: 
 
   - title: "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain"
     authors: <strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank
@@ -96,8 +70,6 @@ main:
     year: 2023
     pdf: https://aclanthology.org/2023.acl-long.662.pdf
     code: https://github.com/mainlp/escoxlmr
-    bibtex: 
-    image: 
 
   - title: "NNOSE: Nearest Neighbor Occupational Skill Extraction"
     authors: <strong>Mike Zhang</strong>, Rob van der Goot, Min-Yen Kan, Barbara Plank
@@ -106,5 +78,3 @@ main:
     year: 2024
     pdf: https://aclanthology.org/2024.eacl-long.35.pdf
     code: https://github.com/mainlp/nnose
-    bibtex: 
-    image: 
