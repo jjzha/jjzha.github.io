@@ -6,7 +6,7 @@ main:
     year: 2019
     pdf: https://aclanthology.org/S19-2069.pdf
     code: 
-    bibtex: ./assets/bibtex/zhang2019grunn2019.bib
+    bibtex:
     image: 
 
   - title: "The Effect of Translationese in Machine Translation Test Sets"
@@ -16,7 +16,7 @@ main:
     year: 2019
     pdf: https://aclanthology.org/W19-5208.pdf
     code: 
-    bibtex: ./assets/bibtex/zhang2019effect.bib
+    bibtex:
     image: 
 
   - title: "Cartography Active Learning"
@@ -26,7 +26,7 @@ main:
     year: 2021
     pdf: https://aclanthology.org/2021.findings-emnlp.36v2.pdf
     code: https://github.com/jjzha/cal
-    bibtex: ./assets/bibtex/zhang2021cartography.bib
+    bibtex:
     image: 
 
   - title: "De-identification of Privacy-related Entities in Job Postings"
@@ -36,7 +36,7 @@ main:
     year: 2021
     pdf: https://aclanthology.org/2021.nodalida-main.21.pdf
     code: 
-    bibtex: ./assets/bibtex/jensen2021identification.bib
+    bibtex:
     image: 
 
   - title: "Experimental Standards for Deep Learning in Natural Language Processing Research"
@@ -46,7 +46,7 @@ main:
     year: 2022
     pdf: https://aclanthology.org/2022.findings-emnlp.196.pdf
     code: 
-    bibtex: ./assets/bibtex/ulmer2022experimental.bib
+    bibtex:
     image: 
 
   - title: "SkillSpan: Hard and Soft Skill Extraction from English Job Postings"
@@ -56,7 +56,7 @@ main:
     year: 2022
     pdf: https://aclanthology.org/2022.naacl-main.366.pdf
     code: https://github.com/kris927b/SkillSpan
-    bibtex: ./assets/bibtex/zhang2022skillspan.bib
+    bibtex: 
     image: 
 
   - title: "Kompetencer: Fine-grained Skill Classification in Danish Job Postings via Distant Supervision and Transfer Learning"
@@ -66,7 +66,7 @@ main:
     year: 2022
     pdf: https://aclanthology.org/2022.lrec-1.46.pdf
     code: 
-    bibtex: ./assets/bibtex/zhang2022kompetencer.bib
+    bibtex: 
     image: 
 
   - title: "Skill Extraction from Job Postings using Weak Supervision"
@@ -76,7 +76,7 @@ main:
     year: 2022
     pdf: 
     code: 
-    bibtex: ./assets/bibtex/zhang2022skill.bib
+    bibtex: 
     image: 
 
   - title: "Evidence > Intuition: Transferability Estimation for Encoder Selection"
@@ -86,7 +86,7 @@ main:
     year: 2022
     pdf: https://aclanthology.org/2022.emnlp-main.283.pdf
     code: 
-    bibtex: ./assets/bibtex/bassignana2022evidence.bib
+    bibtex: 
     image: 
 
   - title: "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain"
@@ -96,7 +96,7 @@ main:
     year: 2023
     pdf: https://aclanthology.org/2023.acl-long.662.pdf
     code: https://github.com/mainlp/escoxlmr
-    bibtex: ./assets/bibtex/zhang2023escoxlm.bib
+    bibtex: 
     image: 
 
   - title: "NNOSE: Nearest Neighbor Occupational Skill Extraction"
@@ -106,5 +106,5 @@ main:
     year: 2024
     pdf: https://aclanthology.org/2024.eacl-long.35.pdf
     code: https://github.com/mainlp/nnose
-    bibtex: ./assets/bibtex/zhang2024nnose.bib
+    bibtex: 
     image: 
