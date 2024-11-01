@@ -38,7 +38,7 @@ main:
   - title: "SkillSpan: Hard and Soft Skill Extraction from English Job Postings"
     authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank
     conference_short: NAACL2022
-    conference: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+    conference: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics; Human Language Technologies
     year: 2022
     pdf: https://aclanthology.org/2022.naacl-main.366.pdf
     code: https://github.com/kris927b/SkillSpan
