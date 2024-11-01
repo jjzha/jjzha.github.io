@@ -1,38 +1,110 @@
 main:
-  - title: "NNOSE: Nearest Neighbor Occupational Skill Extraction"
-    authors: <strong>Mike Zhang</strong>, Rob van der Goot, Min-Yen Kan, Barbara Plank
-    conference_short: EACL2024
-    conference: Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics, 2024.
-    pdf: https://aclanthology.org/2024.eacl-long.35/
-    code: https://github.com/mainlp/nnose
-    bibtex: ./assets/bibtex/2024.eacl-long.35.bib
-    image: ./assets/img/paper_teaser/eacl2024.png
+  - title: "Grunn2019 at SemEval-2019 Task 5: Shared Task on Multilingual Detection of Hate"
+    authors: <strong>Mike Zhang</strong>, Roy David, Leon Graumans, Gerben Timmerman
+    conference_short: SemEval2019
+    conference: Proceedings of SemEval 2019
+    year: 2019
+    pdf: https://aclanthology.org/S19-2069.pdf
+    code: 
+    bibtex: ./assets/bibtex/zhang2019grunn2019.bib
+    image: 
 
-  - title: "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain"
-    authors: <strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank
-    conference_short: ACL2023
-    conference: Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics, 2023.
-    pdf: https://aclanthology.org/2023.acl-long.662/
-    code: https://github.com/mainlp/escoxlmr
-    bibtex: ./assets/bibtex/2023.acl-long.662.bib
-    image: ./assets/img/paper_teaser/acl2023.png
+  - title: "The Effect of Translationese in Machine Translation Test Sets"
+    authors: <strong>Mike Zhang</strong>, Antonio Toral
+    conference_short: WMT2019
+    conference: Proceedings of WMT 2019
+    year: 2019
+    pdf: https://aclanthology.org/W19-5208.pdf
+    code: 
+    bibtex: ./assets/bibtex/zhang2019effect.bib
+    image: 
+
+  - title: "Cartography Active Learning"
+    authors: <strong>Mike Zhang</strong>, Barbara Plank
+    conference_short: EMNLP2021
+    conference: Findings of the Association for Computational Linguistics: EMNLP 2021
+    year: 2021
+    pdf: https://aclanthology.org/2021.findings-emnlp.36v2.pdf
+    code: https://github.com/jjzha/cal
+    bibtex: ./assets/bibtex/zhang2021cartography.bib
+    image: 
+
+  - title: "De-identification of Privacy-related Entities in Job Postings"
+    authors: Kristian Nørgaard Jensen, <strong>Mike Zhang</strong>, Barbara Plank
+    conference_short: NoDaLiDa2021
+    conference: Proceedings of NoDaLiDa 2021
+    year: 2021
+    pdf: https://aclanthology.org/2021.nodalida-main.21.pdf
+    code: 
+    bibtex: ./assets/bibtex/jensen2021identification.bib
+    image: 
+
+  - title: "Experimental Standards for Deep Learning in Natural Language Processing Research"
+    authors: Dennis Ulmer, Elisa Bassignana, Max Müller-Eberstein, Daniel Varab, <strong>Mike Zhang</strong>, Christian Hardmeier, Barbara Plank
+    conference_short: EMNLP2022
+    conference: Findings of the Association for Computational Linguistics: EMNLP 2022
+    year: 2022
+    pdf: https://aclanthology.org/2022.findings-emnlp.196.pdf
+    code: 
+    bibtex: ./assets/bibtex/ulmer2022experimental.bib
+    image: 
 
   - title: "SkillSpan: Hard and Soft Skill Extraction from English Job Postings"
     authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank
     conference_short: NAACL2022
-    conference: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics; Human Language Technologies, 2022.
-    pdf: https://aclanthology.org/2022.naacl-main.366/
-    code: https://github.com/kris927b/SkillSpan/
-    bibtex: ./assets/bibtex/2022.naacl-main.366.bib
-    image: ./assets/img/paper_teaser/naacl22.png
+    conference: Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+    year: 2022
+    pdf: https://aclanthology.org/2022.naacl-main.366.pdf
+    code: https://github.com/kris927b/SkillSpan
+    bibtex: ./assets/bibtex/zhang2022skillspan.bib
+    image: 
 
-  # - title: "Grunn2019 at SemEval-2019 task 5: Shared task on multilingual detection of hate"
-  #   authors: <strong>Mike Zhang</strong>, Roy David, Leon Graumans, Gerben Timmerman
-  #   conference_short: SemEval2019
-  #   conference: Proceedings of the 13th International Workshop on Semantic Evaluation, 2019.
-  #   pdf: https://aclanthology.org/S19-2069/
-  #   code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-  #   page: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #   bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #   notes: Oral Presentation
-  #   image: ./assets/img/teaser_example.png
+  - title: "Kompetencer: Fine-grained Skill Classification in Danish Job Postings via Distant Supervision and Transfer Learning"
+    authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Barbara Plank
+    conference_short: LREC2022
+    conference: Proceedings of LREC 2022
+    year: 2022
+    pdf: https://aclanthology.org/2022.lrec-1.46.pdf
+    code: 
+    bibtex: ./assets/bibtex/zhang2022kompetencer.bib
+    image: 
+
+  - title: "Skill Extraction from Job Postings using Weak Supervision"
+    authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Rob van der Goot, Barbara Plank
+    conference_short: RecSysHR2022
+    conference: Proceedings of RecSysHR'22 (RecSys2022 Workshop)
+    year: 2022
+    pdf: 
+    code: 
+    bibtex: ./assets/bibtex/zhang2022skill.bib
+    image: 
+
+  - title: "Evidence > Intuition: Transferability Estimation for Encoder Selection"
+    authors: Elisa Bassignana, Max Müller-Eberstein, <strong>Mike Zhang</strong>, Barbara Plank
+    conference_short: EMNLP2022
+    conference: Proceedings of EMNLP 2022
+    year: 2022
+    pdf: https://aclanthology.org/2022.emnlp-main.283.pdf
+    code: 
+    bibtex: ./assets/bibtex/bassignana2022evidence.bib
+    image: 
+
+  - title: "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain"
+    authors: <strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank
+    conference_short: ACL2023
+    conference: Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics
+    year: 2023
+    pdf: https://aclanthology.org/2023.acl-long.662.pdf
+    code: https://github.com/mainlp/escoxlmr
+    bibtex: ./assets/bibtex/zhang2023escoxlm.bib
+    image: 
+
+  - title: "NNOSE: Nearest Neighbor Occupational Skill Extraction"
+    authors: <strong>Mike Zhang</strong>, Rob van der Goot, Min-Yen Kan, Barbara Plank
+    conference_short: EACL2024
+    conference: Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics
+    year: 2024
+    pdf: https://aclanthology.org/2024.eacl-long.35.pdf
+    code: https://github.com/mainlp/nnose
+    bibtex: ./assets/bibtex/zhang2024nnose.bib
+    image: 
