@@ -27,7 +27,7 @@ I am interested in:
 ## Publications
 For the full list of publications, see my [Google Scholar](https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en).
 
-If you're interested in my Ph.D. Thesis, see here: [Slides](./assets/files/thesis-presentation-mz.pdf) [Thesis](https://arxiv.org/pdf/2404.18977). 
+If you're interested in my Ph.D. Thesis, see here the [Slides](./assets/files/thesis-presentation-mz.pdf) and [Thesis](https://arxiv.org/pdf/2404.18977). 
 
 <!-- {% include_relative _includes/publications.md %} -->
 
