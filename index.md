@@ -24,6 +24,11 @@ I am interested in:
 - **[25 Mar. 2024]** My Ph.D. thesis is now online! See the ArXiv version [here](https://arxiv.org/pdf/2404.18977).
 - **[15 Feb. 2024]** I started my Postdoc at Aalborg University working on NLP for Education!
 
+## Publications
+For the full list of publications, see my [Google Scholar](https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en).
+
+If you're interested in my Ph.D. Thesis, see here: [Slides](./assets/files/thesis-presentation-mz.pdf) [Thesis](https://arxiv.org/pdf/2404.18977). 
+
 <!-- {% include_relative _includes/publications.md %} -->
 
 <!-- {% include_relative _includes/services.md %}
