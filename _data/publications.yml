@@ -16,7 +16,7 @@ main:
   - title: "Cartography Active Learning"
     authors: <strong>Mike Zhang</strong>, Barbara Plank
     conference_short: EMNLP2021
-    conference: Findings of the Association for Computational Linguistics: EMNLP 2021
+    conference: Findings of the Association for Computational Linguistics (EMNLP 2021)
     year: 2021
     pdf: https://aclanthology.org/2021.findings-emnlp.36v2.pdf
     code: https://github.com/jjzha/cal
@@ -31,7 +31,7 @@ main:
   - title: "Experimental Standards for Deep Learning in Natural Language Processing Research"
     authors: Dennis Ulmer, Elisa Bassignana, Max Müller-Eberstein, Daniel Varab, <strong>Mike Zhang</strong>, Christian Hardmeier, Barbara Plank
     conference_short: EMNLP2022
-    conference: Findings of the Association for Computational Linguistics: EMNLP 2022
+    conference: Findings of the Association for Computational Linguistics (EMNLP 2022)
     year: 2022
     pdf: https://aclanthology.org/2022.findings-emnlp.196.pdf
 
