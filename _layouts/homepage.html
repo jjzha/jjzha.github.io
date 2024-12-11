@@ -38,14 +38,6 @@
   <body>
     <div class="wrapper">
       <header>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#services">Services</a></li>
-
-          </ul>
-        </nav>
         
         {% if site.avatar %}
         <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
@@ -103,24 +95,7 @@
       </header>
       <section>
 
-      <!-- Sections -->
-      <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>{{ site.index }}</p>
-      </section>
-
-      <section id="publications">
-        <h2>Projects</h2>
-        <p>{{ site.publications }}</p>
-      </section>
-      
-      <section id="services">
-        <h2>Services</h2>
-        <p>{{ site.services }}</p>
-        <p>{{ site.invited_talks }}</p>
-      </section>
-      <!-- {{ content }} -->
+      {{ content }}
 
       <br>
 

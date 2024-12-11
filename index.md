@@ -31,3 +31,5 @@ For the full list of publications, see my [Google Scholar](https://scholar.googl
 
 If you're interested in my Ph.D. Thesis, see here the [Slides](./assets/files/thesis-presentation-mz.pdf) and [Thesis](https://arxiv.org/pdf/2404.18977). 
 
+{% include_relative _includes/services.md %}
+{% include_relative _includes/invited_talks.md %}
