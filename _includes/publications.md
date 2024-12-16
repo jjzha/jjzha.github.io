@@ -1,4 +1,3 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Selected Publications</h2>
 <br>
 For the most updated list of publications, see my <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en">Google Scholar</a>.
 <br>
@@ -19,7 +18,7 @@ If you're interested in my Ph.D. Thesis, see here: <a href="./assets/files/thesi
     {% endif %}
     {% endif %}
   </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 5px;">
       <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>

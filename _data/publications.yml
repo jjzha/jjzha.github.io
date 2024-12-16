@@ -1,80 +1,179 @@
 main:
-  - title: "Grunn2019 at SemEval-2019 Task 5: Shared Task on Multilingual Detection of Hate"
-    authors: <strong>Mike Zhang</strong>, Roy David, Leon Graumans, Gerben Timmerman
-    conference_short: SemEval2019
-    conference: Proceedings of SemEval 2019
-    year: 2019
-    pdf: https://aclanthology.org/S19-2069.pdf
+  - title: "SnakModel: Lessons Learned from Training an Open Danish Large Language Model"
+    authors: "<strong>Mike Zhang</strong>, Max Müller-Eberstein, Elisa Bassignana, Rob van der Goot"
+    conference_short: NoDaLiDa2025
+    conference: "Proceedings of the 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies"
+    year: 2024
 
-  - title: "The Effect of Translationese in Machine Translation Test Sets"
-    authors: <strong>Mike Zhang</strong>, Antonio Toral
-    conference_short: WMT2019
-    conference: Proceedings of WMT 2019
-    year: 2019
-    pdf: https://aclanthology.org/W19-5208.pdf
+  - title: "MorSeD: Morphological Segmentation of Danish and its Effect on Language Modeling"
+    authors: "Rob van der Goot, Anette Jensen, Emil Allerslev Schledermann, Mikkel Wildner Kildeberg, Nicolaj Larsen, <strong>Mike Zhang</strong>, Elisa Bassignana"
+    conference_short: NoDaLiDa2025
+    conference: "Proceedings of the 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies"
+    year: 2024
 
-  - title: "Cartography Active Learning"
-    authors: <strong>Mike Zhang</strong>, Barbara Plank
-    conference_short: EMNLP2021
-    conference: "Findings of the Association for Computational Linguistics: EMNLP 2021"
-    year: 2021
-    pdf: https://aclanthology.org/2021.findings-emnlp.36v2.pdf
-    code: https://github.com/jjzha/cal
+  - title: "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge"
+    authors: "Angelika Romanou, Negar Foroutan, Anna Sotnikova, Zeming Chen, Sree Harsha Nelaturu, Shivalika Singh, Rishabh Maheshwary, Micol Altomare, Mohamed A. Haggag, Snegha A, Alfonso Amayuelas, Azril Hafizi Amirudin, Viraat Aryabumi, Danylo Boiko, Michael Chang, Jenny Chim, Gal Cohen, Aditya Kumar Dalmia, Abraham Diress, Sharad Duwal, Daniil Dzenhaliou, Daniel Fernando Erazo Florez, Fabian Farestam, Joseph Marvin Imperial, Shayekh Bin Islam, Perttu Isotalo, Maral Jabbarishiviari, Börje F. Karlsson, Eldar Khalilov, Christopher Klamm, Fajri Koto, Dominik Krzemiński, Gabriel Adriano de Melo, Syrielle Montariol, Yiyang Nan, Joel Niklaus, Jekaterina Novikova, Johan Samir Obando Ceron, Debjit Paul, Esther Ploeger, Jebish Purbey, Swati Rajwal, Selvan Sunitha Ravi, Sara Rydell, Roshan Santhosh, Drishti Sharma, Marjana Prifti Skenduli, Arshia Soltani Moakhar, Bardia Soltani Moakhar, Ran Tamir, Ayush Kumar Tarun, Azmine Toushik Wasi, Thenuka Ovin Weerasinghe, Serhan Yilmaz, <strong>Mike Zhang</strong>, Imanol Schlag, Marzieh Fadaee, Sara Hooker, Antoine Bosselut"
+    conference_short: arXiv
+    conference: "arXiv preprint"
+    year: 2024
+    pdf: "https://arxiv.org/pdf/2411.19799.pdf"
+    code: "https://huggingface.co/datasets/CohereForAI/include-base-44"
 
-  - title: "De-identification of Privacy-related Entities in Job Postings"
-    authors: Kristian Nørgaard Jensen, <strong>Mike Zhang</strong>, Barbara Plank
-    conference_short: NoDaLiDa2021
-    conference: Proceedings of NoDaLiDa 2021
-    year: 2021
-    pdf: https://aclanthology.org/2021.nodalida-main.21.pdf
+  - title: "All Languages Matter: Evaluating LMMs on Culturally Diverse 100 Languages"
+    authors: "Ashmal Vayani, Dinura Dissanayake, Hasindri Watawana, Noor Ahsan, Nevasini Sasikumar, Omkar Thawakar, Henok Biadglign Ademtew, Yahya Hmaiti, Amandeep Kumar, Kartik Kuckreja, Mykola Maslych, Wafa Al Ghallabi, Mihail Mihaylov, Chao Qin, Abdelrahman M Shaker, <strong>Mike Zhang</strong>, Mahardika Krisna Ihsani, Amiel Esplana, Monil Gokani, Shachar Mirkin, Harsh Singh, Ashay Srivastava, Endre Hamerlik, Fathinah Asma Izzati, Fadillah Adamsyah Maani, Sebastian Cavada, Jenny Chim, Rohit Gupta, Sanjay Manjunath, Kamila Zhumakhanova, Feno Heriniaina Rabevohitra, Azril Amirudin, Muhammad Ridzuan, Daniya Kareem, Ketan More, Kunyang Li, Pramesh Shakya, Muhammad Saad, Amirpouya Ghasemaghaei, Amirbek Djanibekov, Dilshod Azizov, Branislava Jankovic, Naman Bhatia, Alvaro Cabrera, Johan Obando-Ceron, Olympiah Otieno, Fabian Farestam, Muztoba Rabbani, Sanoojan Baliah, Santosh Sanjeev, Abduragim Shtanchaev, Maheen Fatima, Thao Nguyen, Amrin Kareem, Toluwani Aremu, Nathan Xavier, Amit Bhatkal, Hawau Toyin, Aman Chadha, Hisham Cholakkal, Rao Muhammad Anwer, Michael Felsberg, Jorma Laaksonen, Thamar Solorio, Monojit Choudhury, Ivan Laptev, Mubarak Shah, Salman Khan, Fahad Khan"
+    conference_short: arXiv
+    conference: "arXiv preprint"
+    year: 2024
+    pdf: "https://arxiv.org/pdf/2411.16508.pdf"
+    code: "https://mbzuai-oryx.github.io/ALM-Bench/"
 
-  - title: "Experimental Standards for Deep Learning in Natural Language Processing Research"
-    authors: Dennis Ulmer, Elisa Bassignana, Max Müller-Eberstein, Daniel Varab, <strong>Mike Zhang</strong>, Christian Hardmeier, Barbara Plank
+  - title: "The Responsible Development of Automated Student Feedback with Generative AI"
+    authors: "Euan Lindsay, <strong>Mike Zhang</strong>, Aditya Johri, Johannes Bjerva"
+    conference_short: arXiv
+    conference: "arXiv preprint"
+    year: 2024
+    pdf: "https://arxiv.org/abs/2308.15334"
+
+  - title: "Leveraging Large Language Models for Actionable Course Evaluation Student Feedback to Lecturers"
+    authors: "<strong>Mike Zhang</strong>, Euan D Lindsay, Frederik Bode Thorbensen, Danny Bøgsted Poulsen, Johannes Bjerva"
+    conference_short: SEFI2024
+    conference: "Proceedings of the 52nd Annual Conference of the European Society for Engineering Education"
+    year: 2024
+    pdf: "https://zenodo.org/records/14254832"
+
+  - title: "Can Humans Identify Domains?"
+    authors: "Maria Barrett, Max Müller-Eberstein, Elisa Bassignana, Amalie Brogaard Pauli, <strong>Mike Zhang</strong>, Rob van der Goot"
+    conference_short: LREC-COLING2024
+    conference: "Proceedings of the Joint LREC-COLING 2024 Conference"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.lrec-main.245.pdf"
+    code: "https://bitbucket.org/robvanderg/humans-and-domains/src"
+
+  - title: "Aya Dataset: An Open-access Collection for Multilingual Instruction Tuning"
+    authors: "Shivalika Singh, Freddie Vargus, Daniel D’souza, Börje Karlsson, Abinaya Mahendiran, Wei-Yin Ko, Herumb Shandilya, Jay Patel, Deividas Mataciunas, Laura O’Mahony, <strong>Mike Zhang</strong>, Ramith Hettiarachchi, Joseph Wilson, Marina Machado, Luisa Moura, Dominik Krzemiński, Hakimeh Fadaei, Irem Ergun, Ifeoma Okoh, Aisha Alaagib, Oshan Mudannayake, Zaid Alyafeai, Vu Chien, Sebastian Ruder, Surya Guthikonda, Emad Alghamdi, Sebastian Gehrmann, Niklas Muennighoff, Max Bartolo, Julia Kreutzer, Ahmet Üstün, Marzieh Fadaee, Sara Hooker"
+    conference_short: ACL2024
+    conference: "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.acl-long.620.pdf"
+    code: "https://huggingface.co/datasets/CohereForAI/aya_dataset"
+
+  - title: "Deep Learning-based Computational Job Market Analysis: A Survey on Skill Extraction and Classification from Job Postings"
+    authors: "Elena Senger, <strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank"
+    conference_short: NLP4HR2024
+    conference: "Proceedings of NLP4HR (EACL2024 Workshop)"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.nlp4hr-1.1.pdf"
+
+  - title: "Rethinking Skill Extraction in the Job Market Domain using Large Language Models"
+    authors: "Khanh Cao Nguyen, <strong>Mike Zhang</strong>, Syrielle Montariol, Antoine Bosselut"
+    conference_short: NLP4HR2024
+    conference: "Proceedings of NLP4HR (EACL2024 Workshop)"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.nlp4hr-1.3.pdf"
+    code: "https://github.com/epfl-nlp/SCESC-LLM-skill-extraction"
+
+  - title: "JOBSKAPE: A Framework for Generating Synthetic Job Postings to Enhance Skill Matching"
+    authors: "Antoine Magron, Anna Dai, <strong>Mike Zhang</strong>, Syrielle Montariol, Antoine Bosselut"
+    conference_short: NLP4HR2024
+    conference: "Proceedings of NLP4HR (EACL2024 Workshop)"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.nlp4hr-1.4.pdf"
+    code: "https://github.com/magantoine/JobSkape"
+
+  - title: "Entity Linking in the Job Market Domain"
+    authors: "<strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank"
+    conference_short: EACL2024findings
+    conference: "Findings of the Association for Computational Linguistics: EACL 2024"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.findings-eacl.28.pdf"
+    code: "https://github.com/jjzha/el_esco"
+
+  - title: "NNOSE: Nearest Neighbor Occupational Skill Extraction"
+    authors: "<strong>Mike Zhang</strong>, Rob van der Goot, Min-Yen Kan, Barbara Plank"
+    conference_short: EACL2024
+    conference: "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics"
+    year: 2024
+    pdf: "https://aclanthology.org/2024.eacl-long.35.pdf"
+    code: "https://github.com/mainlp/nnose"
+
+  - title: "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain"
+    authors: "<strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank"
+    conference_short: ACL2023
+    conference: "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics"
+    year: 2023
+    pdf: "https://aclanthology.org/2023.acl-long.662.pdf"
+    code: "https://github.com/mainlp/escoxlmr"
+
+  - title: "Evidence > Intuition: Transferability Estimation for Encoder Selection"
+    authors: "Elisa Bassignana, Max Müller-Eberstein, <strong>Mike Zhang</strong>, Barbara Plank"
     conference_short: EMNLP2022
-    conference: "Findings of the Association for Computational Linguistics: EMNLP 2022"
+    conference: "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP 2022)"
     year: 2022
-    pdf: https://aclanthology.org/2022.findings-emnlp.196.pdf
+    pdf: "https://aclanthology.org/2022.emnlp-main.283.pdf"
+    code: "https://github.com/mainlp/logme-nlp/tree/logme-integration"
+
+  - title: "Skill Extraction from Job Postings using Weak Supervision"
+    authors: "<strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Rob van der Goot, Barbara Plank"
+    conference_short: RecSysHR2022
+    conference: "Proceedings of the RecSys in HR 2022 Workshop"
+    year: 2022
+    pdf: "https://arxiv.org/pdf/2209.08071"
+    code: "https://github.com/jjzha/skill-extraction-weak-supervision"
+
+  - title: "Kompetencer: Fine-grained Skill Classification in Danish Job Postings via Distant Supervision and Transfer Learning"
+    authors: "<strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Barbara Plank"
+    conference_short: LREC2022
+    conference: "Proceedings of the Thirteenth Language Resources and Evaluation Conference (LREC 2022)"
+    year: 2022
+    pdf: "https://aclanthology.org/2022.lrec-1.46.pdf"
+    code: "https://github.com/jjzha/kompetencer"
 
   - title: "SkillSpan: Hard and Soft Skill Extraction from English Job Postings"
-    authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank
+    authors: "<strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank"
     conference_short: NAACL2022
     conference: "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies"
     year: 2022
-    pdf: https://aclanthology.org/2022.naacl-main.366.pdf
-    code: https://github.com/kris927b/SkillSpan
+    pdf: "https://aclanthology.org/2022.naacl-main.366.pdf"
+    code: "https://github.com/kris927b/SkillSpan"
 
-  - title: "Kompetencer: Fine-grained Skill Classification in Danish Job Postings via Distant Supervision and Transfer Learning"
-    authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Barbara Plank
-    conference_short: LREC2022
-    conference: Proceedings of LREC 2022
-    year: 2022
-    pdf: https://aclanthology.org/2022.lrec-1.46.pdf
-
-  - title: "Skill Extraction from Job Postings using Weak Supervision"
-    authors: <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Rob van der Goot, Barbara Plank
-    conference_short: RecSysHR2022
-    conference: Proceedings of RecSysHR'22 (RecSys2022 Workshop)
-    year: 2022
-
-  - title: "Evidence > Intuition: Transferability Estimation for Encoder Selection"
-    authors: Elisa Bassignana, Max Müller-Eberstein, <strong>Mike Zhang</strong>, Barbara Plank
+  - title: "Experimental Standards for Deep Learning in Natural Language Processing Research"
+    authors: "Dennis Ulmer, Elisa Bassignana, Max Müller-Eberstein, Daniel Varab, <strong>Mike Zhang</strong>, Christian Hardmeier, Barbara Plank"
     conference_short: EMNLP2022
-    conference: Proceedings of EMNLP 2022
+    conference: "Findings of the Association for Computational Linguistics: EMNLP 2022"
     year: 2022
-    pdf: https://aclanthology.org/2022.emnlp-main.283.pdf
+    pdf: "https://aclanthology.org/2022.findings-emnlp.196.pdf"
+    code: "https://github.com/Kaleidophon/awesome-experimental-standards-deep-learning"
 
-  - title: "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain"
-    authors: <strong>Mike Zhang</strong>, Rob van der Goot, Barbara Plank
-    conference_short: ACL2023
-    conference: Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics
-    year: 2023
-    pdf: https://aclanthology.org/2023.acl-long.662.pdf
-    code: https://github.com/mainlp/escoxlmr
+  - title: "De-identification of Privacy-related Entities in Job Postings"
+    authors: "Kristian Nørgaard Jensen, <strong>Mike Zhang</strong>, Barbara Plank"
+    conference_short: NoDaLiDa2021
+    conference: "Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa 2021)"
+    year: 2021
+    pdf: "https://aclanthology.org/2021.nodalida-main.21.pdf"
+    code: "https://github.com/kris927b/JobStack"
 
-  - title: "NNOSE: Nearest Neighbor Occupational Skill Extraction"
-    authors: <strong>Mike Zhang</strong>, Rob van der Goot, Min-Yen Kan, Barbara Plank
-    conference_short: EACL2024
-    conference: Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics
-    year: 2024
-    pdf: https://aclanthology.org/2024.eacl-long.35.pdf
-    code: https://github.com/mainlp/nnose
+
+  - title: "Cartography Active Learning"
+    authors: "<strong>Mike Zhang</strong>, Barbara Plank"
+    conference_short: EMNLP2021
+    conference: "Findings of the Association for Computational Linguistics: EMNLP 2021"
+    year: 2021
+    pdf: "https://aclanthology.org/2021.findings-emnlp.36v2.pdf"
+    code: "https://github.com/jjzha/cal"
+
+  - title: "The Effect of Translationese in Machine Translation Test Sets"
+    authors: "<strong>Mike Zhang</strong>, Antonio Toral"
+    conference_short: WMT2019
+    conference: "Proceedings of the Fourth Conference on Machine Translation (WMT 2019)"
+    year: 2019
+    pdf: "https://aclanthology.org/W19-5208.pdf"
+    code: "https://github.com/jjzha/translationese"
+
+
+  - title: "Grunn2019 at SemEval-2019 Task 5: Shared Task on Multilingual Detection of Hate"
+    authors: "<strong>Mike Zhang</strong>, Roy David, Leon Graumans, Gerben Timmerman"
+    conference_short: SemEval2019
+    conference: "Proceedings of SemEval 2019"
+    year: 2019
+    pdf: "https://aclanthology.org/S19-2069.pdf"
+    code: "https://github.com/jjzha/sharedhate"
