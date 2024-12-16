@@ -20,6 +20,7 @@ I am interested in:
 
 ## What am I up to
 
+- **[6 Dec. 2024]** SnakModel and MorSed are now accepted at NoDaLiDa 2025!
 - **[29 Nov. 2024]** The [Include Benchmark](https://arxiv.org/pdf/2411.19799): A multilingual exam benchmark for LLMs is now on Arxiv!
 - **[22 Nov. 2024]** [ALM-Bench](https://arxiv.org/pdf/2411.16508): A multilingual cultural benchmark for VLMs is now on Arxiv!
 - **[16 May 2024]** The [Aya Dataset](https://arxiv.org/pdf/2402.06619) is accepted to ACL 2024. See you hopefully there!
