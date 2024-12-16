@@ -1,6 +1,6 @@
 <h2 id="publications" style="margin: 2px 0px -15px;">Selected Publications</h2>
 <br>
-For the full list of publications, see my <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en">Google Scholar</a>.
+For the most updated list of publications, see my <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en">Google Scholar</a>.
 <br>
 If you're interested in my Ph.D. Thesis, see here: <a href="./assets/files/thesis-presentation-mz.pdf">[Slides]</a> <a href="https://arxiv.org/pdf/2404.18977">[Thesis]</a>.
 

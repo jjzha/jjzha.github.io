@@ -8,7 +8,15 @@
   <li><a href="https://lrec2022.lrec-conf.org/en/"><autocolor><b>Session Co-chair</b>: The 13th Edition of its Language Resources and Evaluation Conference (2022).</autocolor></a></li>
 </ul>
 
-<h4 style="margin:0 10px 0;">Conference Reviewing</h4>
+<h4 style="margin:0 10px 0;">Program Committee</h4>
+
+<h5 style="margin:0 10px 0;">Area Chair</h5>
+
+<ul style="margin:0 0 5px;">
+  <li><a href=""><autocolor>NAACL (2024-)</autocolor></a></li>
+</ul>
+
+<h5 style="margin:0 10px 0;">Reviewer</h5>
 
 <ul style="margin:0 0 5px;">
   <li><a href=""><autocolor>NeurIPS (2024-)</autocolor></a></li>
