@@ -1,8 +1,3 @@
----
-title: "Publications"
-layout: page
----
-
 For the most updated list of publications, see my <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en">Google Scholar</a>.<br>
 If you're interested in my Ph.D. Thesis, see here: <a href="./assets/files/thesis-presentation-mz.pdf">[Slides]</a> <a href="https://arxiv.org/pdf/2404.18977">[Thesis]</a>.
 
@@ -17,22 +12,22 @@ If you're interested in my Ph.D. Thesis, see here: <a href="./assets/files/thesi
       <li class="publication-item hidden">
       {% endif %}
       
-        <div class="pub-row" style="margin-bottom:3px;">
-          <div class="col-sm-3 abbr" style="position: relative; padding-right:3px; padding-left:3px;">
+        <div class="pub-row" style="margin-bottom: 1px;">
+          <div class="col-sm-3 abbr" style="position: relative; padding: 3px;">
             {% if link.image %}
-              <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+              <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width:100px; height:auto;">
               {% if link.conference_short %}
                 <abbr class="badge">{{ link.conference_short }}</abbr>
               {% endif %}
             {% endif %}
           </div>
-          <div class="col-sm-9" style="position: relative; padding-right:3px; padding-left:3px;">
+          <div class="col-sm-9" style="position: relative; padding: 3px;">
             <div class="title"><a href="{{ link.pdf }}" target="_blank">{{ link.title }}</a></div>
             <div class="author">{{ link.authors }}</div>
             <div class="periodical">
               <em>{{ link.conference_short }}</em> ({{ link.year }})
             </div>
-            <ul class="links" style="list-style: none; padding-left: 0; margin-top: 5px;">
+            <ul class="links" style="list-style: none; padding-left: 0; margin-top: 4px; margin-bottom: 2px;">
               {% if link.pdf %}
                 <li style="display: inline; margin-right: 10px;">
                   <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">PDF</a>
@@ -68,12 +63,36 @@ If you're interested in my Ph.D. Thesis, see here: <a href="./assets/files/thesi
 </div>
 
 <!-- Show More button -->
-<button id="showMoreButton" onclick="showMorePublications()">Show More</button>
+<button id="showMoreButton" onclick="showMorePublications()" class="show-more-btn">Show More</button>
 
-<!-- Inline CSS to hide publications by default -->
+<!-- Inline CSS to hide publications and style the button -->
 <style>
+  /* Hide items beyond the first 5 */
   .hidden {
     display: none;
+  }
+
+  /* Nicer "Show More" button */
+  .show-more-btn {
+    display: block;                /* center the button by default */
+    margin: 20px auto;            /* some spacing above/below, auto left/right */
+    padding: 8px 16px;            /* padding for a nicer look */
+    background-color: var(--global-theme-color); 
+    color: #fff;
+    border: none;
+    border-radius: 4px;           /* rounded corners */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .show-more-btn:hover {
+    background-color: var(--global-hover-color); /* on hover, use your site's hover color */
+  }
+
+  /* Tighter spacing between items */
+  .publications ol.bibliography li {
+    margin-bottom: 0.4rem;  /* slightly reduced spacing from default */
   }
 </style>
 
