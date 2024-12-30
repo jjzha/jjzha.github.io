@@ -3,13 +3,15 @@ main:
     authors: "<strong>Mike Zhang</strong>, Max Müller-Eberstein, Elisa Bassignana, Rob van der Goot"
     conference_short: NoDaLiDa2025
     conference: "Proceedings of the 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies"
-    year: 2024
+    pdf: "https://arxiv.org/pdf/2412.12956.pdf"
+    code: "https://github.com/nlpnorth/snakmodel/"
+    year: 2025
 
   - title: "MorSeD: Morphological Segmentation of Danish and its Effect on Language Modeling"
     authors: "Rob van der Goot, Anette Jensen, Emil Allerslev Schledermann, Mikkel Wildner Kildeberg, Nicolaj Larsen, <strong>Mike Zhang</strong>, Elisa Bassignana"
     conference_short: NoDaLiDa2025
     conference: "Proceedings of the 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies"
-    year: 2024
+    year: 2025
 
   - title: "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge"
     authors: "Angelika Romanou, Negar Foroutan, Anna Sotnikova, Zeming Chen, Sree Harsha Nelaturu, Shivalika Singh, Rishabh Maheshwary, Micol Altomare, Mohamed A. Haggag, Snegha A, Alfonso Amayuelas, Azril Hafizi Amirudin, Viraat Aryabumi, Danylo Boiko, Michael Chang, Jenny Chim, Gal Cohen, Aditya Kumar Dalmia, Abraham Diress, Sharad Duwal, Daniil Dzenhaliou, Daniel Fernando Erazo Florez, Fabian Farestam, Joseph Marvin Imperial, Shayekh Bin Islam, Perttu Isotalo, Maral Jabbarishiviari, Börje F. Karlsson, Eldar Khalilov, Christopher Klamm, Fajri Koto, Dominik Krzemiński, Gabriel Adriano de Melo, Syrielle Montariol, Yiyang Nan, Joel Niklaus, Jekaterina Novikova, Johan Samir Obando Ceron, Debjit Paul, Esther Ploeger, Jebish Purbey, Swati Rajwal, Selvan Sunitha Ravi, Sara Rydell, Roshan Santhosh, Drishti Sharma, Marjana Prifti Skenduli, Arshia Soltani Moakhar, Bardia Soltani Moakhar, Ran Tamir, Ayush Kumar Tarun, Azmine Toushik Wasi, Thenuka Ovin Weerasinghe, Serhan Yilmaz, <strong>Mike Zhang</strong>, Imanol Schlag, Marzieh Fadaee, Sara Hooker, Antoine Bosselut"
