@@ -20,7 +20,14 @@ If you're interested in my Ph.D. Thesis, see here: <a href="./assets/files/thesi
     </div>
     <div class="col-sm-9" style="position: relative; padding-right:3px; padding-left:3px;">
         <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-        <div class="author">{{ link.authors }}</div>
+        <div class="author">
+          {% assign authors_array = link.authors | split: ',' | map: 'strip' %}
+          {% if authors_array.size > 5 %}
+            {{ authors_array | slice: 0, 5 | join: ', ' }}, et al.
+          {% else %}
+            {{ link.authors }}
+          {% endif %}
+        </div>
         <div class="periodical"><em>{{ link.conference_short }}</em> ({{ link.year }})</div>
         <ul class="links" style="list-style: none; padding-left: 0; margin-top: 5px;">
           {% if link.pdf %} 
