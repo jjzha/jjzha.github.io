@@ -1,0 +1,360 @@
+/* 
+  Neo-Brutalist "Page on a Page" Layout
+  - Body has a gray background
+  - A white container with a thick black border and offset shadow
+  - Slightly rounded corners
+  - Centered landing page with minimal vertical centering for the hero
+  - Publications: square panes in a row-wise grid grouped by year
+*/
+
+/* 1) HTML/BODY BASIC RESET + BACKGROUND */
+html, body {
+    margin: 0;
+    padding: 0 0 20rem 0; /* 3rem padding at bottom */
+    height: 100%;
+    background-color: #eee; /* Light gray to show "page on a page" */
+  }
+  
+  body {
+    /* Example: use 'Space Mono' with fallback fonts, or replace with your own preference */
+    font-family: "Space Mono", Arial, Helvetica, sans-serif;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+  /* 2) MAIN WRAPPER - "Floating Page" */
+  .page-container {
+    background-color: #fff;
+    border: 4px solid #000;
+    box-shadow: 12px 12px 0 #000; /* Bold offset shadow */
+    border-radius: 6px;           /* Slightly rounded corners */
+  
+    max-width: 1200px;
+    margin: 1rem auto; 
+  }
+  
+  /* 3) NAVIGATION BAR */
+  .nav-bar {
+    background-color: #ffd700;
+    border-bottom: 6px solid #000;
+    padding: 1.5rem;
+    /* box-shadow: 6px 6px 0 #000; */
+    /* border-radius: 6px; */
+  }
+
+  /* By default, hide the hamburger button on larger screens */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: auto; /* if you want it to align to the right */
+  }
+  
+  /* Hamburger icon (3 lines) */
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+    transition: 0.3s;
+  }
+  
+  /* When toggled, we can rotate or transform these lines into an "X" */
+  .nav-toggle.active .hamburger {
+    background: transparent; /* middle line disappears */
+  }
+  .nav-toggle.active .hamburger::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-toggle.active .hamburger::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Main nav menu (ul) styling */
+  .nav-menu {
+    /* On larger screens, the nav is displayed inline by default. 
+       We'll hide on small screens if needed. */
+    display: flex;
+    justify-content: center;
+    /* Adapt to your design: borders, shadows, etc. */
+  }
+  
+  /* Remove bullets and default padding from nav items */
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 1;
+    padding: 0;
+  }
+  
+  /* On small screens, hide the menu by default */
+  @media (max-width: 768px) {
+    /* Show the nav-toggle button on mobile */
+    .nav-toggle {
+      display: block;
+    }
+  
+    /* Initially hide the nav menu */
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    /* Make the menu appear when .show is toggled via JS */
+    .nav-menu.show {
+      display: flex; /* or block */
+    }
+  
+    /* Let nav items stack vertically */
+    .nav-menu ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-menu ul li {
+        margin-bottom: 1.5rem;
+      }
+
+    .nav-menu ul li:last-child {
+        margin-bottom: 0;
+      }
+  }
+
+  /* The brand + toggle container (first row in header) */
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Keep your existing header styling (background, box-shadow, etc.) or adapt it */
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0 #000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  
+  .nav-bar a:hover {
+    background-color: #ffffff;
+    color: #ffd700;
+  }
+  
+  .nav-bar a.active {
+    background-color: #ffffff;
+    color: #ffd700;
+  }
+  
+  /* 4) LANDING PAGE */
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertical centering within the landing area */
+    padding: 2rem 1.5rem;
+    min-height: 60vh;        /* Adjust as desired for vertical spacing */
+  }
+  
+  /* Profile Picture & Intro */
+  .profile-pic-container {
+    margin:  auto; /* Center the container */
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0 #000;
+    float: left; /* Float the image to the left */
+    margin-top: 40px;
+    margin-right: 50px; /* Add some space between the image and text */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    border: 4px solid #000;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  .personal-info {
+    max-width: 1000px;
+    text-align: justify;
+    margin: 2rem 0 2rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* News Section */
+  .news-section {
+    max-width: 1000px;
+    width: 100%;
+    margin: 2rem 0;
+    border: 4px solid #000;
+    padding: 1rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  .news-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 4px solid #000;
+    border: 4px solid #000;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  .news-section ul {
+    list-style: disc inside;
+  }
+  
+  .news-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Contact Box */
+  .contact-box {
+    max-width: 1000px;
+    width: 100%;
+    margin: 2rem 0;
+    border: 4px solid #000;
+    padding: 1rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  .contact-box h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 4px solid #000;
+    border: 4px solid #000;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  /* 5) CONTENT SECTION (CV, PUBLICATIONS, SERVICES) */
+  .content-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .content-section h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 4px solid #000;
+    border: 4px solid #000;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  .cv-section {
+    margin-bottom: 2rem;
+    border: 3px solid #000;
+    padding: 1rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+  
+  /* 6) PUBLICATIONS: Square Panes in a Row-Wise Grid */
+  /* Example classes for grouping papers by year */
+  .publications-year {
+    margin-bottom: 2rem;
+  }
+  
+  .publications-year h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    box-shadow: 4px 4px 0 #000;
+    border-radius: 4px;
+  }
+
+  
+  /* 8) SERVICES LIST */
+  .service-list {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .service-item {
+    border: 3px solid #000;
+    padding: 1rem;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 6px;
+  }
+
+ .social-icon {
+    color: #000;          /* Default icon color */
+    margin-right: 1rem;   /* Spacing between icons */
+    font-size: 2.5rem;    /* Make icons larger */
+    transition: color 0.2s;
+  }
+  
+  .social-icon:hover {
+    color: #ffd700;       /* Hover color */
+  }
+  
+  
+  /* 9) FOOTER */
+  .footer {
+    border-top: 4px solid #000;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+  }
+  
+  
+  /* 10) RESPONSIVE TWEAKS */
+  @media (max-width: 766px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .nav-bar ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .news-section,
+    .contact-box {
+      margin: 1rem 0;
+    }
+  }
+  
