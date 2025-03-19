@@ -9,7 +9,6 @@ import {
   Bold
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
-import { Butterfly_Kids } from "next/font/google";
 
 interface ProfileSectionProps {
   aboutMe: AboutMe;
