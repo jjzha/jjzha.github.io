@@ -13,6 +13,12 @@ export const newsData: News[] = [
   //   link: "",
   // },
   {
+    date: "10 April 2025",
+    title: "Kaleidoscope Pre-print Released!",
+    description: "A new benchmark for evaluating VLMs on exams is out.",
+    link: "https://arxiv.org/pdf/2504.07072",
+  },
+  {
     date: "21 February 2025",
     title: "Area Chair for ACL 2025",
     description: "I'll be serving as an Area Chair for ACL 2025.",
