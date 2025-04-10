@@ -15,7 +15,7 @@ export const newsData: News[] = [
   {
     date: "10 April 2025",
     title: "Kaleidoscope Pre-print Released!",
-    description: "A new benchmark for evaluating VLMs on exams is out.",
+    description: "A new multilingual benchmark for evaluating VLMs on exams is out.",
     link: "https://arxiv.org/pdf/2504.07072",
   },
   {
