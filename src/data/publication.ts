@@ -15,6 +15,14 @@ export const publicationData: Publication[] = [
   // === Working Papers (2025) ===
   {
     year: "2025",
+    conference: "ArXiv",
+    title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation",
+    authors: "Israfel Salazar, Manuel Fernández Burda, Shayekh Bin Islam, Arshia Soltani Moakhar, Shivalika Singh, Fabian Farestam, Angelika Romanou, ... (other authors), Mike Zhang, (other authors), Desmond Elliott, Enzo Ferrante, Sara Hooker, Marzieh Fadaee",
+    paperUrl: "https://arxiv.org/pdf/2504.07072",
+    codeUrl: "https://huggingface.co/datasets/CohereForAI/kaleidoscope",
+  },
+  {
+    year: "2025",
     conference: "Technical Report",
     title: "Sailor2: Sailing in South-East Asia with Inclusive Multilingual LLMs",
     authors: "Longxu Dou, Qian Liu, Fan Zhou, Changyu Chen, ... (30 authors), Mike Zhang, Shiqi Chen, Tianyu Pang, Chao Du, Xinyi Wan, Wei Lu, Min Lin",
