@@ -80,8 +80,9 @@ export default function Home() {
                     publicationData.length > 0 && (
                       <section key={sectionName}>
                         <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
-                          Publications
+                          Most Recent Publications
                         </h2>
+                        <p>For the full list of publications, please check my <a href="https://scholar.google.com/citations?hl=en&user=Zw6i1v0AAAAJ&">Google Scholar</a></p>
                         <div className="space-y-12">
                           {publicationData.map((publication, index) => (
                             <div key={index}>
