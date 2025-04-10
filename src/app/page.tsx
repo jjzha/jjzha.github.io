@@ -82,7 +82,7 @@ export default function Home() {
                         <h2 className="font-serif text-l mb-12 tracking-wide uppercase">
                           Most Recent Publications
                         </h2>
-                        <h3 className="font-serif text-m mb-12 tracking-wide">For the full list of publications, please check my <a href="https://scholar.google.com/citations?hl=en&user=Zw6i1v0AAAAJ&"><u>Google Scholar</u></a></h3>
+                        <h3 className="font-serif text-s mb-12 tracking-wide">For the full list of publications, please check my <a href="https://scholar.google.com/citations?hl=en&user=Zw6i1v0AAAAJ&"><u>Google Scholar</u></a></h3>
                         <div className="space-y-12">
                           {publicationData.map((publication, index) => (
                             <div key={index}>
