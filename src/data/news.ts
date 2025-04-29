@@ -6,12 +6,18 @@ export interface News {
 }
 
 export const newsData: News[] = [
-  // {
-  //   date: "2 March 2025",
-  //   title: "NoDaLiDa 2025 Appearance",
-  //   description: "I'll be at NoDaLiDa 2025.",
-  //   link: "",
-  // },
+  {
+    date: "29 April 2025",
+    title: "Official print of Shades is out",
+    description: "SHADES: Towards a Multilingual Assessment of Stereotypes in Large Language Models is now available in the ACL anthology.",
+    link: "https://aclanthology.org/2025.naacl-long.600.pdf",
+  },
+  {
+    date: "28 April 2025",
+    title: "Talk at AI and Labour Market Workshop",
+    description: "Gave a talk at the AI and Labour Market Workshop at the University of Ghent about retrieval augmented skill extraction.",
+    link: "https://sites.google.com/view/ai-lm-workshop/home?authuser=0",
+  },
   {
     date: "10 April 2025",
     title: "Kaleidoscope Pre-print Released!",
@@ -24,18 +30,12 @@ export const newsData: News[] = [
     description: "I'll be serving as an Area Chair for ACL 2025.",
     link: "",
   },
-  {
-    date: "20 February 2025",
-    title: "Sailor2 Technical Report Released",
-    description: "The Sailor2 Technical Report is out!",
-    link: "https://arxiv.org/abs/2502.12982",
-  },
-  {
-    date: "17 February 2025",
-    title: "LLM Agents for Educational Feedback Pre-print Released",
-    description: "A Pre-print on leveraging LLM agents for educational feedback is out!",
-    link: "https://arxiv.org/abs/2502.12927",
-  },
+  // {
+  //   date: "17 February 2025",
+  //   title: "LLM Agents for Educational Feedback Pre-print Released",
+  //   description: "A Pre-print on leveraging LLM agents for educational feedback is out!",
+  //   link: "https://arxiv.org/abs/2502.12927",
+  // },
   // {
   //   date: "23 January 2025",
   //   title: "Shades Accepted to NAACL'25",
