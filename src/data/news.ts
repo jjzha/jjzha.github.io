@@ -7,6 +7,12 @@ export interface News {
 
 export const newsData: News[] = [
   {
+    date: "20 May 2025",
+    title: "Preprint of fs1 is out.",
+    description: "We show that scaling reasoning via simple test-time scaling can improve factuality in LLMs.",
+    link: "https://huggingface.co/papers/2505.11140",
+  },
+  {
     date: "29 April 2025",
     title: "Official print of Shades is out",
     description: "SHADES: Towards a Multilingual Assessment of Stereotypes in Large Language Models is now available in the ACL anthology.",
@@ -24,12 +30,12 @@ export const newsData: News[] = [
     description: "A new multilingual benchmark for evaluating VLMs on exams is out.",
     link: "https://arxiv.org/pdf/2504.07072",
   },
-  {
-    date: "21 February 2025",
-    title: "Area Chair for ACL 2025",
-    description: "I'll be serving as an Area Chair for ACL 2025.",
-    link: "",
-  },
+  // {
+  //   date: "21 February 2025",
+  //   title: "Area Chair for ACL 2025",
+  //   description: "I'll be serving as an Area Chair for ACL 2025.",
+  //   link: "",
+  // },
   // {
   //   date: "17 February 2025",
   //   title: "LLM Agents for Educational Feedback Pre-print Released",
