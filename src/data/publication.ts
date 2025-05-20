@@ -16,6 +16,14 @@ export const publicationData: Publication[] = [
   {
     year: "2025",
     conference: "Pre-print",
+    title: "Scaling Reasoning can Improve Factuality in Large Language Models",
+    authors: "Mike Zhang, Johannes Bjerva, Russa Biswas",
+    paperUrl: "https://arxiv.org/pdf/2505.11140",
+    codeUrl: "https://github.com/jjzha/fs1",
+  },
+  {
+    year: "2025",
+    conference: "Pre-print",
     title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation",
     authors: "Israfel Salazar, Manuel Fernández Burda, Shayekh Bin Islam, Arshia Soltani Moakhar, Shivalika Singh, Fabian Farestam, Angelika Romanou, ... (other authors), Mike Zhang, (other authors), Desmond Elliott, Enzo Ferrante, Sara Hooker, Marzieh Fadaee",
     paperUrl: "https://arxiv.org/pdf/2504.07072",
