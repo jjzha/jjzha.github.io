@@ -13,9 +13,9 @@ export const educationData: Education[] = [
     year: "2024",
     institution: "IT University of Copenhagen",
     degree: "Ph.D. in Natural Language Processing",
+    advisor: "Barbara Plank & Rob van der Goot",
     thesis: "Computational Job Market Analysis with Natural Language Processing",
     thesisUrl: "https://arxiv.org/abs/2404.18977",
-    advisor: "Barbara Plank & Rob van der Goot",
   },
   {
     year: "2020",
