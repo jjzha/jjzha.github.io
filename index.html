@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Zhang - Academic Webpage</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* --- Basic Setup & Typography --- */
+        body {
+            /* User Requirement: Serif font for all body text */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+        }
+
+        /* --- Layout --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header --- */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            /* Removed sans-serif font-family */
+            font-size: 2.8em;
+            margin-bottom: 0;
+        }
+
+        header h2 {
+            /* Removed sans-serif font-family */
+            font-size: 1.3em;
+            font-weight: normal;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        nav a {
+            /* Removed sans-serif font-family */
+            text-decoration: none;
+            color: #333;
+            /* Added: Increase icon size for better visibility */
+            font-size: 1.5em; /* Adjust size as needed */
+        }
+
+        nav a:hover {
+            color: #0056b3;
+            text-decoration: none; /* No underline for icons */
+        }
+
+        /* --- Main Content --- */
+        main section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            /* Removed sans-serif font-family */
+            font-size: 1.6em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* --- Links --- */
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Lists (Used for News & Publications) --- */
+        ul {
+            padding-left: 20px;
+        }
+        
+        #publications ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #publications li {
+            margin-bottom: 1.5em;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            color: #777;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+        /* --- Horizontal Rule --- */
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+        
+        /* --- Accessibility: Screen-reader Only --- */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Mike Zhang</h1>
+            <h2>Postdoctoral Researcher<br>University of Copenhagen</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Home">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="sr-only">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#publications" title="Publications">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span class="sr-only">Publications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cv-mike-zhang-261125.pdf" title="Full CV (PDF)">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <span class="sr-only">Full CV (PDF)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank" title="Google Scholar">
+                        <i class="fa-brands fa-google-scholar"></i>
+                        <span class="sr-only">Google Scholar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/jjzha" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h3>About</h3>
+                <p>
+                    I am a Postdoctoral Researcher at the University of Copenhagen & Pioneer Centre for Artificial Intelligence in Copenhagen, Denmark. My current research focus is on post-training in low-resource scenarios.
+                </p>
+                <p>
+                    Previously, I did a Postdoc at Aalborg University, where I worked on NLP and Education. I completed my Ph.D. in Computer Science at the IT University of Copenhagen, defending my thesis, "Computational Job Market Analysis with Natural Language Processing", in March 2024.
+                </p>
+                <p>
+                    My research interests include Large Language Models, Computational Job Market Analysis, and NLP for Education. If you are interested in working together feel free to reach out to me.
+                </p>
+            </section>
+
+            <hr>
+
+            <section id="news">
+                <h3>Recent News</h3>
+                <ul>
+                    <li><strong>Dec. 2025:</strong> I have joined the University of Copenhagen to work with Desmond Elliott and Ali Basirat.</li>
+                    <li><strong>Nov. 2025:</strong> Giving an invited talk at the CST Workshop in Copenhagen, DK.</li>
+                    <li><strong>Sep. 2025:</strong> Nominated (top-3) for the Best Practice Paper Award at SEFI 2025.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="publications">
+                <h3>Selected Publications</h3>
+                <p>
+                    For a full list, please see my <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>(Best Practice Paper Nominee)</strong><br>
+                        <strong>Mike Zhang</strong>, Euan D. Lindsay, Maj-Britt Quitzau, Johannes Bjerva. "Scaling Course Evaluations with Large Language Models: Semester-level Digestible Student Feedback for Program Leaders". 
+                        <em>The 53rd Annual Conference of the European Society for Engineering Education (SEFI)</em>. 2025.
+                    </li>
+                    <li>
+                        <strong>(ITU Research Award Nominee)</strong><br>
+                        <strong>Mike Zhang</strong>, Max Müller-Eberstein, Elisa Bassignana, Rob van der Goot. "Snakmodel: Lessons Learned from Training an Open Danish Large Language Model". 
+                        <em>The Joint 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies</em>. 2025.
+                    </li>
+                    <li>
+                        Shivalika Singh, Freddie Vargus, Daniel D’souza, Börje F. Karlsson, Abinaya Mahendiran, Wei-Yin Ko, Herumb Shandilya, Jay Patel, Deividas Mataciunas, Laura O’Mahony, <strong>Mike Zhang</strong>, Ramith Hettiarachchi, Joseph Wilson, Marina Machado, Luisa Moura, Dominik Krzemiński, Hakimeh Fadaei, Irem Ergun, Ifeoma Okoh, Aisha Alaagib, Oshan Mudannayake, Zaid Alyafeai, Vu Chien, Sebastian Ruder, Surya Guthikonda, Emad Alghamdi, Sebastian Gehrmann, Niklas Muennighoff, Max Bartolo, Julia Kreutzer, Ahmet Üstün, Marzieh Fadaee, Sara Hooker. "Aya Dataset: An Open-Access Collection for Multilingual Instruction Tuning". 
+                        <em>In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)</em>. 2024.
+                    </li>
+                    <li>
+                        <strong>Mike Zhang</strong>, Rob van der Goot, Min-Yen Kan, and Barbara Plank. "NNOSE: Nearest Neighbor Occupational Skill Extraction". 
+                        <em>In Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)</em>. 2024.
+                    </li>
+                    <li>
+                        <strong>Mike Zhang</strong>, Rob van der Goot, and Barbara Plank. "ESCOXLM-R: Multilingual Taxonomy-driven Pre-training for the Job Market Domain". 
+                        <em>In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)</em>. 2023.
+                    </li>
+                    <li>
+                        <strong>Mike Zhang</strong>, Kristian Nørgaard Jensen, Sif Dam Sonniks, and Barbara Plank. "SkillSpan: Hard and Soft Skill Extraction from Job Postings". 
+                        <em>In Proceedings of the 2022 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)</em>. 2022.
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>
+                    <strong>Email:</strong> mike.zhang(at)di.ku.dk<br>
+                    <strong>Location:</strong> Copenhagen, Denmark
+                </p>
+                <p>
+                    <a href="https://github.com/jjzha" target="_blank">github.com/jjzha</a> | 
+                    <a href="https://hf.co/jjzha" target="_blank">hf.co/jjzha</a>
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p><small>Last Updated: November 11, 2025</small></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
