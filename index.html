@@ -1,261 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Zhang - Academic Webpage</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike Zhang — Postdoctoral Researcher</title>
 
-    <style>
-        /* --- Basic Setup & Typography --- */
-        body {
-            /* User Requirement: Serif font for all body text */
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfdfd;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        /* --- Layout --- */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+<style>
+    :root {
+        --paper:      #f6f0e4;
+        --paper-deep: #efe7d6;
+        --ink:        #221d17;
+        --ink-soft:   #4b423a;
+        --muted:      #857968;
+        --accent:     #9a3b2c;
+        --accent-lo:  #b9543f;
+        --line:       rgba(34, 29, 23, 0.14);
+        --line-soft:  rgba(34, 29, 23, 0.08);
+        --measure:    40rem;
+    }
 
-        /* --- Header --- */
-        header {
-            text-align: center;
-            padding-bottom: 20px;
-        }
+    * { box-sizing: border-box; }
 
-        header h1 {
-            /* Removed sans-serif font-family */
-            font-size: 2.8em;
-            margin-bottom: 0;
-        }
+    html { scroll-behavior: smooth; }
 
-        header h2 {
-            /* Removed sans-serif font-family */
-            font-size: 1.3em;
-            font-weight: normal;
-            color: #555;
-            margin-top: 5px;
-        }
+    body {
+        font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+        font-size: 1.18rem;
+        line-height: 1.72;
+        color: var(--ink-soft);
+        margin: 0;
+        background-color: var(--paper);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
 
-        /* --- Navigation --- */
-        nav {
-            text-align: center;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-            margin-bottom: 30px;
-        }
+    /* Subtle paper grain overlay */
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+    .container {
+        position: relative;
+        z-index: 1;
+        max-width: var(--measure);
+        margin: 0 auto;
+        padding: clamp(3.5rem, 9vw, 7rem) 1.5rem 4rem;
+    }
 
-        nav li {
-            display: inline-block;
-            margin: 0 12px;
-        }
+    a {
+        color: var(--accent);
+        text-decoration: none;
+        background-image: linear-gradient(var(--accent-lo), var(--accent-lo));
+        background-size: 0% 1px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.32s cubic-bezier(0.22, 0.61, 0.36, 1), color 0.2s;
+    }
+    a:hover { background-size: 100% 1px; color: var(--accent-lo); }
 
-        nav a {
-            /* Removed sans-serif font-family */
-            text-decoration: none;
-            color: #333;
-            /* Added: Increase icon size for better visibility */
-            font-size: 1.5em; /* Adjust size as needed */
-        }
+    /* ---------- Header ---------- */
+    header { margin-bottom: 3.25rem; }
 
-        nav a:hover {
-            color: #0056b3;
-            text-decoration: none; /* No underline for icons */
-        }
+    .monogram {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 6rem; height: 6rem;
+        border-radius: 50%;
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: 1.05rem;
+        letter-spacing: 0.02em;
+        color: var(--ink);
+        margin-bottom: 1.75rem;
+    }
 
-        /* --- Main Content --- */
-        main section {
-            margin-bottom: 30px;
-        }
+    header h1 {
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: clamp(3rem, 8.5vw, 5.2rem);
+        line-height: 0.98;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin: 0 0 1rem;
+    }
 
-        h3 {
-            /* Removed sans-serif font-family */
-            font-size: 1.6em;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
+    .role {
+        font-size: 1.18rem;
+        color: var(--muted);
+        margin: 0;
+        max-width: 30rem;
+    }
+    .role .at { color: var(--ink-soft); font-style: italic; }
 
-        /* --- Links --- */
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
+    .accent-rule {
+        width: 3.25rem;
+        height: 3px;
+        background: var(--accent);
+        margin: 1.9rem 0 1.75rem;
+        border: 0;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    /* ---------- Nav / social ---------- */
+    nav ul {
+        list-style: none;
+        padding: 0; margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+    nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.55rem; height: 2.55rem;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        color: var(--ink-soft);
+        background-image: none;
+        font-size: 1.05rem;
+        transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+    nav a:hover {
+        color: var(--paper);
+        background: var(--accent);
+        border-color: var(--accent);
+        transform: translateY(-2px);
+    }
 
-        /* --- Lists (Used for News & Publications) --- */
-        ul {
-            padding-left: 20px;
-        }
-        
-        #publications ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+    /* ---------- Sections ---------- */
+    main section { margin: 0 0 1rem; }
 
-        #publications li {
-            margin-bottom: 1.5em;
-        }
+    .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-family: 'Fraunces', serif;
+        font-size: 0.74rem;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 1.4rem;
+    }
+    .eyebrow::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+    }
 
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
-            color: #777;
-        }
-        
-        footer p {
-            margin: 0;
-        }
+    section p { margin: 0 0 1.1rem; }
+    section p:last-child { margin-bottom: 0; }
 
-        /* --- Horizontal Rule --- */
-        hr {
-            border: 0;
-            border-top: 1px solid #ddd;
-            margin: 40px 0;
-        }
-        
-        /* --- Accessibility: Screen-reader Only --- */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
+    main section + section { margin-top: 3.25rem; }
 
-    </style>
+    /* ---------- News ---------- */
+    .news { list-style: none; padding: 0; margin: 0; }
+    .news li {
+        position: relative;
+        padding: 1.15rem 0 1.15rem 0;
+        border-bottom: 1px solid var(--line-soft);
+        font-size: 1.06rem;
+        line-height: 1.6;
+        color: var(--ink-soft);
+    }
+    .news li:last-child { border-bottom: 0; }
+    .date {
+        display: inline-block;
+        font-family: 'Fraunces', serif;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        background: var(--paper-deep);
+        border: 1px solid var(--line-soft);
+        border-radius: 999px;
+        padding: 0.18rem 0.7rem;
+        margin-right: 0.6rem;
+        white-space: nowrap;
+        vertical-align: 0.05em;
+    }
+
+    /* ---------- Contact ---------- */
+    .contact-grid {
+        display: grid;
+        gap: 0.4rem 1.25rem;
+    }
+    .contact-grid .label {
+        font-family: 'Fraunces', serif;
+        font-size: 0.74rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+        margin-top: 3.5rem;
+        padding-top: 1.75rem;
+        border-top: 1px solid var(--line-soft);
+        font-size: 0.92rem;
+        color: var(--muted);
+    }
+    footer p { margin: 0; }
+
+    .sr-only {
+        position: absolute; width: 1px; height: 1px;
+        padding: 0; margin: -1px; overflow: hidden;
+        clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    /* ---------- Entrance animation ---------- */
+    @keyframes rise {
+        from { opacity: 0; transform: translateY(14px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+        opacity: 0;
+        animation: rise 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+    .d1 { animation-delay: 0.05s; }
+    .d2 { animation-delay: 0.15s; }
+    .d3 { animation-delay: 0.27s; }
+    .d4 { animation-delay: 0.39s; }
+    .d5 { animation-delay: 0.51s; }
+    .d6 { animation-delay: 0.63s; }
+
+    /* ---------- Publications ---------- */
+    .pub-list { list-style: none; padding: 0; margin: 0 0 1.6rem; }
+    .pub-list li {
+        padding: 1.3rem 0;
+        border-bottom: 1px solid var(--line-soft);
+    }
+    .pub-list li:first-child { padding-top: 0; }
+    .pub-list li:last-child { border-bottom: 0; }
+
+    .pub-venue {
+        display: inline-block;
+        font-family: 'Fraunces', serif;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        background: var(--paper-deep);
+        border: 1px solid var(--line-soft);
+        border-radius: 999px;
+        padding: 0.16rem 0.7rem;
+        margin-bottom: 0.6rem;
+    }
+    .pub-title {
+        display: block;
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: 1.18rem;
+        line-height: 1.32;
+        color: var(--ink);
+        background-image: none;
+        margin-bottom: 0.35rem;
+        transition: color 0.2s;
+    }
+    .pub-title:hover { color: var(--accent); background-size: 0 0; }
+    .pub-authors {
+        font-size: 0.98rem;
+        line-height: 1.5;
+        color: var(--muted);
+        margin-bottom: 0.4rem;
+    }
+    .pub-authors .me { color: var(--ink-soft); font-style: italic; }
+    .pub-links { font-size: 0.9rem; }
+    .pub-links a { margin-right: 1rem; }
+    .scholar-note { font-size: 1.05rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal { animation: none; opacity: 1; }
+        a, nav a { transition: none; }
+    }
+</style>
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <header>
-            <h1>Mike Zhang</h1>
-            <h2>Postdoctoral Researcher<br>University of Copenhagen</h2>
-        </header>
-
-        <nav>
+    <header>
+        <div class="monogram reveal d1" aria-hidden="true">
+            <img src="mike_zhang.jpg" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+        </div>
+        <h1 class="reveal d1">Mike Zhang</h1>
+        <p class="role reveal d2">
+            Postdoctoral Researcher <span class="at">at</span><br> University of Copenhagen<br>Pioneer Centre for Artificial Intelligence
+        </p>
+        <hr class="accent-rule reveal d2">
+        <nav class="reveal d3" aria-label="Profiles and links">
             <ul>
-                <li>
-                    <a href="#" title="Home">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="sr-only">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#publications" title="Publications">
-                        <i class="fa-solid fa-book-open"></i>
-                        <span class="sr-only">Publications</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="cv-mike-zhang.pdf" title="Full CV (PDF)">
-                        <i class="fa-solid fa-file-pdf"></i>
-                        <span class="sr-only">Full CV (PDF)</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank" title="Google Scholar">
-                        <i class="fa-brands fa-google-scholar"></i>
-                        <span class="sr-only">Google Scholar</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/jjzha" target="_blank" title="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                        <span class="sr-only">GitHub</span>
-                    </a>
-                </li>
-                    <li>
-                    <a href="https://linkedin.com/in/jjzha/" target="_blank" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    <span class="sr-only">LinkedIn</span>
-                    </a>
-                </li>
+                <li><a href="#" title="Home"><i class="fa-solid fa-house"></i><span class="sr-only">Home</span></a></li>
+                <li><a href="#publications" title="Publications"><i class="fa-solid fa-book-open"></i><span class="sr-only">Publications</span></a></li>
+                <li><a href="cv-mike-zhang.pdf" title="Full CV (PDF)"><i class="fa-solid fa-file-pdf"></i><span class="sr-only">Full CV (PDF)</span></a></li>
+                <li><a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i><span class="sr-only">Google Scholar</span></a></li>
+                <li><a href="https://github.com/jjzha" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i><span class="sr-only">GitHub</span></a></li>
+                <li><a href="https://linkedin.com/in/jjzha/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
             </ul>
         </nav>
+    </header>
 
-        <main>
-            <section id="about">
-                <h3>About</h3>
-                <p>
-                    I am a Postdoctoral Researcher at the University of Copenhagen & Pioneer Centre for Artificial Intelligence in Copenhagen, Denmark. My current research focus is on post-training in low-resource scenarios.
+    <main>
+        <section id="about" class="reveal d4">
+            <h3 class="eyebrow">About</h3>
+            <p>
+                I am a Postdoctoral Researcher at the University of Copenhagen &amp; the Pioneer Centre for
+                Artificial Intelligence in Copenhagen, Denmark. My current research focus is on
+                post-training in low-resource scenarios.
+            </p>
+            <p>
+                Previously, I did a Postdoc at Aalborg University, where I worked on NLP and Education.
+                I completed my Ph.D. in Computer Science at the IT University of Copenhagen, defending my
+                thesis, <em>“<a href="https://arxiv.org/abs/2404.18977" target="_blank" rel="noopener">Computational Job Market Analysis with Natural Language Processing</a>,”</em>
+                in March 2024.
+            </p>
+            <p>
+                My research interests include Large Language Models, Computational Job Market Analysis, and
+                NLP for Education. If you are interested in working together, feel free to reach out.
+            </p>
+        </section>
+
+        <section id="news" class="reveal d5">
+            <h3 class="eyebrow">Recent News</h3>
+            <ul class="news">
+                <li><span class="date">May 2026</span>3 papers accepted at ACL (Main, Findings, and Industry) on factual test-time scaling with knowledge graphs <a href="https://arxiv.org/pdf/2505.11140" target="_blank" rel="noopener">[1]</a>, language identification <a href="https://arxiv.org/pdf/2601.18026" target="_blank" rel="noopener">[2]</a>, and challenges and opportunities in KPI extraction from earnings calls <a href="https://openreview.net/forum?id=ahqgU0Z2P2" target="_blank" rel="noopener">[3]</a>. Congrats to all authors!</li>
+                <li><span class="date">Feb 2026</span>3 papers accepted at LREC on automated student feedback with LLMs <a href="https://arxiv.org/abs/2502.12927" target="_blank" rel="noopener">[1]</a>, KPI extraction from financial texts <a href="https://arxiv.org/abs/2502.15411" target="_blank" rel="noopener">[2]</a>, and connecting educational learning outcomes with job skills <a href="https://arxiv.org/abs/2603.03134" target="_blank" rel="noopener">[3]</a>. Congrats Rasmus and Nurlan!</li>
+                <li><span class="date">Feb 2026</span>1 paper accepted at the VarDial workshop on language variation across socioeconomic groups and LLMs <a href="https://arxiv.org/abs/2602.11939" target="_blank" rel="noopener">[1]</a>. Congrats Elisa!</li>
+                <li><span class="date">Jan 2026</span>1 paper accepted at ICLR on Kaleidoscope, a multilingual, multimodal exam dataset for evaluating MLLMs <a href="https://openreview.net/pdf?id=zCYXhSy9UH" target="_blank" rel="noopener">[1]</a>. Congrats Isra!</li>
+                <li><span class="date">Dec 2025</span>I have joined the University of Copenhagen to work with Desmond Elliott and Ali Basirat.</li>
+            </ul>
+        </section>
+
+        <section id="publications" class="reveal d6">
+            <h3 class="eyebrow">Selected Publications</h3>
+            <ul class="pub-list">
+                <li>
+                    <span class="pub-venue">ArXiv · 2026</span>
+                    <a class="pub-title" href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">CroCo: Cross-Lingual Contrastive Preference Tuning on Self-Generations</a>
+                    <div class="pub-authors"><span class="me">Mike Zhang</span>, Ali Basirat, Desmond Elliott</div>
+                    <div class="pub-links"><a href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">arXiv</a></div>
+                </li>
+                <li>
+                    <span class="pub-venue">ACL Findings · 2026</span>
+                    <a class="pub-title" href="https://arxiv.org/abs/2305.12092" target="_blank" rel="noopener">Follow the Path: Reasoning over Knowledge Graph Paths to Improve Large Language Model Factuality</a>
+                    <div class="pub-authors"><span class="me">Mike Zhang</span>, Rob van der Goot, Barbara Plank</div>
+                    <div class="pub-links"><a href="https://arxiv.org/abs/2305.12092" target="_blank" rel="noopener">arXiv</a></div>
+                </li>
+                <li>
+                    <span class="pub-venue">NAACL · 2022</span>
+                    <a class="pub-title" href="https://aclanthology.org/2022.naacl-main.366/" target="_blank" rel="noopener">SkillSpan: Hard and Soft Skill Extraction from English Job Postings</a>
+                    <div class="pub-authors"><span class="me">Mike Zhang</span>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank</div>
+                    <div class="pub-links"><a href="https://aclanthology.org/2022.naacl-main.366/" target="_blank" rel="noopener">ACL Anthology</a></div>
+                </li>
+            </ul>
+            <p class="scholar-note">
+                For the full and most up-to-date list, see my
+                <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
+            </p>
+        </section>
+
+        <section id="contact" class="reveal d6">
+            <h3 class="eyebrow">Contact</h3>
+            <div class="contact-grid">
+                <p><span class="label">Email</span> &nbsp; mike.zhang<span aria-hidden="true">(at)</span>di.ku.dk</p>
+                <p><span class="label">Location</span> &nbsp; Copenhagen, Denmark</p>
+                <p><span class="label">Elsewhere</span> &nbsp;
+                    <a href="https://github.com/jjzha" target="_blank" rel="noopener">github.com/jjzha</a> ·
+                    <a href="https://hf.co/jjzha" target="_blank" rel="noopener">hf.co/jjzha</a>
                 </p>
-                <p>
-                    Previously, I did a Postdoc at Aalborg University, where I worked on NLP and Education. I completed my Ph.D. in Computer Science at the IT University of Copenhagen, defending my thesis, "Computational Job Market Analysis with Natural Language Processing", in March 2024.
-                </p>
-                <p>
-                    My research interests include Large Language Models, Computational Job Market Analysis, and NLP for Education. If you are interested in working together feel free to reach out to me.
-                </p>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <hr>
+    <footer class="reveal d6">
+        <p>Last updated February 20, 2026 · Copenhagen</p>
+    </footer>
 
-            <section id="news">
-                <h3>Recent News</h3>
-                <ul>
-                    <li><strong>05/2026:</strong> 3 papers accepted at ACL (Main, Findings, and Industry) on factual test-time scaling with knowledge graphs <a href="https://arxiv.org/pdf/2505.11140" target="_blank">[1]</a>, language identification <a href="https://arxiv.org/pdf/2601.18026" target="_blank">[2]</a>, and challenges and opportunities in KPI extraction form earning calls <a href="https://openreview.net/forum?id=ahqgU0Z2P2" target="_blank">[3]</a>. Congrats to all authors!</li>
-                    <li><strong>02/2026:</strong> 3 papers accepted at LREC on automated student feedback with LLMs <a href="https://arxiv.org/abs/2502.12927" target="_blank">[1]</a>, KPI extraction from financial texts <a href="https://arxiv.org/abs/2502.15411" target="_blank">[2]</a>, and connecting educational learning outcomes with job skills <a href="https://arxiv.org/abs/2603.03134" target="_blank">[3]</a>. Congrats Rasmus and Nurlan!</li>
-                    <li><strong>02/2026:</strong> 1 paper accepted at the VarDial workshop on language variation across different socioeconomic groups and LLMs <a href="https://arxiv.org/abs/2602.11939" target="_blank">[1; camera-ready version]</a>. Congrats Elisa!</li>
-                    <li><strong>01/2026:</strong> 1 paper accepted at ICLR on Kaleidoscope; a multilingual, multimodal exam dataset for evaluating MLLMs <a href="https://openreview.net/pdf?id=zCYXhSy9UH" target="_blank">[1]</a>. Congrats Isra!</li>
-                    <li><strong>12/2025:</strong> I have joined the University of Copenhagen to work with Desmond Elliott and Ali Basirat.</li>
-                </ul>
-            </section>
-
-            <hr>
-
-            <section id="publications">
-                <h3>Publications</h3>
-                <p>
-                    See my <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank">Google Scholar profile</a> for the most up-to-date list.
-                </p>
-            </section>
-
-            <section id="contact">
-                <h3>Contact</h3>
-                <p>
-                    <strong>Email:</strong> mike.zhang(at)di.ku.dk<br>
-                    <strong>Location:</strong> Copenhagen, Denmark
-                </p>
-                <p>
-                    <a href="https://github.com/jjzha" target="_blank">github.com/jjzha</a> | 
-                    <a href="https://hf.co/jjzha" target="_blank">hf.co/jjzha</a>
-                </p>
-            </section>
-
-        </main>
-
-        <footer>
-            <p><small>Last Updated: February 20, 2026</small></p>
-        </footer>
-
-    </div>
+</div>
 
 </body>
 </html>
