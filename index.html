@@ -16,15 +16,13 @@
 <meta property="og:image" content="https://jjzha.github.io/mike_zhang.jpg">
 <meta name="twitter:card" content="summary">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%239a3b2c'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='31' font-weight='600' letter-spacing='-1' fill='%23f6f0e4' text-anchor='middle'%3EMZ%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%232647c9'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial,sans-serif' font-size='30' font-weight='700' letter-spacing='-2' fill='%23ffffff' text-anchor='middle'%3EMZ%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <script>
-    /* Set theme before first paint to avoid a flash. */
     (function () {
         var d = document.documentElement;
         d.classList.add('js');
@@ -37,56 +35,45 @@
 
 <style>
     :root {
-        --paper:      #f6f0e4;
-        --paper-deep: #efe7d6;
-        --paper-tint: rgba(154, 59, 44, 0.045);
-        --ink:        #221d17;
-        --ink-soft:   #4b423a;
-        --muted:      #857968;
-        --accent:     #9a3b2c;
-        --accent-lo:  #b9543f;
-        --line:       rgba(34, 29, 23, 0.14);
-        --line-soft:  rgba(34, 29, 23, 0.08);
-        --grain:      0.05;
-        --glow:       rgba(154, 59, 44, 0.07);
-        --shadow:     rgba(34, 29, 23, 0.13);
-        --measure:    40rem;
+        --bg:       #fbfbf9;
+        --surface:  #f2f2ee;
+        --ink:      #131315;
+        --ink-2:    #3d3d42;
+        --muted:    #75757c;
+        --line:     #e2e2dc;
+        --line-2:   #ededE7;
+        --accent:   #2647c9;
+        --accent-2: #1b36a8;
+        --shadow:   rgba(19, 19, 21, 0.10);
         color-scheme: light;
     }
 
     @media (prefers-color-scheme: dark) {
         :root:not([data-theme="light"]) {
-            --paper:      #16130f;
-            --paper-deep: #201b15;
-            --paper-tint: rgba(224, 118, 92, 0.06);
-            --ink:        #f3ede1;
-            --ink-soft:   #cec4b3;
-            --muted:      #918573;
-            --accent:     #e0765c;
-            --accent-lo:  #f0947d;
-            --line:       rgba(243, 237, 225, 0.16);
-            --line-soft:  rgba(243, 237, 225, 0.09);
-            --grain:      0.035;
-            --glow:       rgba(224, 118, 92, 0.08);
-            --shadow:     rgba(0, 0, 0, 0.45);
+            --bg:       #1b1b1e;
+            --surface:  #232327;
+            --ink:      #f0f0f2;
+            --ink-2:    #c7c7cd;
+            --muted:    #8e8e97;
+            --line:     #34343a;
+            --line-2:   #28282d;
+            --accent:   #93aaff;
+            --accent-2: #adc0ff;
+            --shadow:   rgba(0, 0, 0, 0.55);
             color-scheme: dark;
         }
     }
-
     :root[data-theme="dark"] {
-        --paper:      #16130f;
-        --paper-deep: #201b15;
-        --paper-tint: rgba(224, 118, 92, 0.06);
-        --ink:        #f3ede1;
-        --ink-soft:   #cec4b3;
-        --muted:      #918573;
-        --accent:     #e0765c;
-        --accent-lo:  #f0947d;
-        --line:       rgba(243, 237, 225, 0.16);
-        --line-soft:  rgba(243, 237, 225, 0.09);
-        --grain:      0.035;
-        --glow:       rgba(224, 118, 92, 0.08);
-        --shadow:     rgba(0, 0, 0, 0.45);
+        --bg:       #1b1b1e;
+        --surface:  #232327;
+        --ink:      #f0f0f2;
+        --ink-2:    #c7c7cd;
+        --muted:    #8e8e97;
+        --line:     #34343a;
+        --line-2:   #28282d;
+        --accent:   #93aaff;
+        --accent-2: #adc0ff;
+        --shadow:   rgba(0, 0, 0, 0.55);
         color-scheme: dark;
     }
 
@@ -94,67 +81,26 @@
 
     html {
         scroll-behavior: smooth;
-        background-color: var(--paper);
+        background: var(--bg);
+        -webkit-text-size-adjust: 100%;
     }
 
     body {
-        font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
-        font-optical-sizing: auto;
-        font-size: 1.18rem;
-        line-height: 1.72;
-        color: var(--ink-soft);
         margin: 0;
-        background-color: var(--paper);
+        background: var(--bg);
+        color: var(--ink-2);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.68;
         -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        transition: background-color 0.4s ease, color 0.4s ease;
+        font-feature-settings: 'kern' 1, 'liga' 1, 'cv05' 1;
+        transition: background-color 0.35s ease, color 0.35s ease;
     }
 
-    /* Warm light falling from the top of the page */
-    body::after {
-        content: "";
-        position: fixed;
-        inset: 0 0 auto 0;
-        height: 60vh;
-        z-index: 0;
-        pointer-events: none;
-        background: radial-gradient(120% 100% at 50% -20%, var(--glow), transparent 70%);
-    }
+    ::selection { background: var(--accent); color: #fff; }
 
-    /* Subtle paper grain overlay */
-    body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: 0;
-        pointer-events: none;
-        opacity: var(--grain);
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    }
-
-    ::selection {
-        background: var(--accent);
-        color: var(--paper);
-    }
-
-    .container {
-        position: relative;
-        z-index: 1;
-        max-width: var(--measure);
-        margin: 0 auto;
-        padding: clamp(3.5rem, 9vw, 7rem) 1.5rem 4rem;
-    }
-
-    a {
-        color: var(--accent);
-        text-decoration: none;
-        background-image: linear-gradient(var(--accent-lo), var(--accent-lo));
-        background-size: 0% 1px;
-        background-position: 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 0.32s cubic-bezier(0.22, 0.61, 0.36, 1), color 0.2s;
-    }
-    a:hover { background-size: 100% 1px; color: var(--accent-lo); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-2); }
 
     :focus-visible {
         outline: 2px solid var(--accent);
@@ -162,222 +108,315 @@
         border-radius: 2px;
     }
 
-    /* ---------- Theme toggle ---------- */
-    .theme-toggle {
-        position: absolute;
-        top: clamp(1.5rem, 4vw, 2.5rem);
-        right: 1.5rem;
-        width: 2.4rem; height: 2.4rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        background: transparent;
-        color: var(--muted);
-        font-size: 0.85rem;
-        cursor: pointer;
-        padding: 0;
-        transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+    .mono {
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-variant-ligatures: none;
     }
-    .theme-toggle:hover {
-        color: var(--accent);
-        border-color: var(--accent);
-        transform: rotate(-25deg);
-    }
-    .theme-toggle .fa-moon { display: none; }
-    @media (prefers-color-scheme: dark) {
-        :root:not([data-theme="light"]) .theme-toggle .fa-moon { display: inline; }
-        :root:not([data-theme="light"]) .theme-toggle .fa-sun  { display: none; }
-    }
-    :root[data-theme="dark"] .theme-toggle .fa-moon { display: inline; }
-    :root[data-theme="dark"] .theme-toggle .fa-sun  { display: none; }
-    :root[data-theme="light"] .theme-toggle .fa-sun  { display: inline; }
-    :root[data-theme="light"] .theme-toggle .fa-moon { display: none; }
-    html:not(.js) .theme-toggle { display: none; }
 
-    /* ---------- Header ---------- */
-    header { margin-bottom: 3.25rem; }
+    /* ---------- Shell ---------- */
+    .shell {
+        display: grid;
+        grid-template-columns: 17.5rem minmax(0, 1fr);
+        gap: 0 5.5rem;
+        max-width: 74rem;
+        margin: 0 auto;
+        padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 5vw, 4rem) 5rem;
+    }
 
-    .monogram {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: 6.5rem; height: 6.5rem;
-        border-radius: 50%;
-        margin-bottom: 1.9rem;
-        box-shadow: 0 0 0 1px var(--line), 0 14px 32px -14px var(--shadow);
-        transition: box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    /* ---------- Rail ---------- */
+    .rail { align-self: start; }
+    @media (min-width: 62rem) and (min-height: 44rem) {
+        .rail { position: sticky; top: clamp(3rem, 7vw, 5.5rem); }
     }
-    .monogram::after {
-        content: "";
-        position: absolute;
-        inset: -0.45rem;
-        border: 1px solid var(--line-soft);
-        border-radius: 50%;
-    }
-    .monogram img {
-        width: 100%; height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
+
+    .portrait {
         display: block;
+        width: 100%;
+        max-width: 11.5rem;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center 22%;
+        border-radius: 3px;
+        filter: grayscale(1) contrast(1.04);
+        transition: filter 0.5s ease, transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px var(--shadow);
     }
-    header:hover .monogram {
-        transform: translateY(-2px);
-        box-shadow: 0 0 0 1px var(--accent), 0 18px 36px -14px var(--shadow);
-    }
+    .rail:hover .portrait { filter: grayscale(0) contrast(1); transform: translateY(-2px); }
 
-    header h1 {
-        font-family: 'Fraunces', serif;
-        font-weight: 500;
-        font-size: clamp(3rem, 8.5vw, 5.2rem);
-        line-height: 0.98;
-        letter-spacing: -0.02em;
+    .rail h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -0.035em;
+        line-height: 1.05;
         color: var(--ink);
-        margin: 0 0 1rem;
+        margin: 1.75rem 0 0.85rem;
     }
 
     .role {
-        font-size: 1.18rem;
+        font-size: 0.875rem;
+        line-height: 1.55;
         color: var(--muted);
         margin: 0;
-        max-width: 30rem;
-        text-wrap: pretty;
     }
-    .role .at { color: var(--ink-soft); font-style: italic; }
-
-    .accent-rule {
-        width: 3.25rem;
-        height: 3px;
-        background: var(--accent);
-        margin: 1.9rem 0 1.75rem;
-        border: 0;
-        border-radius: 2px;
+    .role strong {
+        display: block;
+        font-weight: 500;
+        color: var(--ink-2);
     }
 
-    /* ---------- Nav / social ---------- */
-    nav ul {
-        list-style: none;
-        padding: 0; margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.4rem;
-    }
-    nav a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 2.55rem; height: 2.55rem;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        color: var(--ink-soft);
-        background-image: none;
-        font-size: 1.05rem;
-        transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
-    }
-    nav a:hover {
-        color: var(--paper);
-        background: var(--accent);
-        border-color: var(--accent);
-        transform: translateY(-3px);
-        box-shadow: 0 8px 16px -8px var(--shadow);
-    }
-
-    /* ---------- Sections ---------- */
-    main section { margin: 0 0 1rem; scroll-margin-top: 2.5rem; }
-
-    .eyebrow {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        font-family: 'Fraunces', serif;
-        font-size: 0.74rem;
-        font-weight: 600;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin: 0 0 1.4rem;
-    }
-    .eyebrow::after {
-        content: "";
-        flex: 1;
+    .rail-rule {
         height: 1px;
-        background: linear-gradient(to right, var(--line), transparent);
+        background: var(--line);
+        border: 0;
+        margin: 1.6rem 0;
     }
 
-    section p { margin: 0 0 1.1rem; text-wrap: pretty; }
-    section p:last-child { margin-bottom: 0; }
+    /* Table of contents */
+    .toc { list-style: none; padding: 0; margin: 0 0 1.6rem; }
+    .toc a {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.3rem 0;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: var(--muted);
+        transition: color 0.2s;
+    }
+    .toc a::before {
+        content: "";
+        width: 0.9rem; height: 1px;
+        background: var(--line);
+        transition: width 0.28s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.2s;
+    }
+    .toc a:hover { color: var(--ink); }
+    .toc a.active { color: var(--ink); }
+    .toc a.active::before { width: 1.8rem; background: var(--accent); }
 
-    main section + section { margin-top: 3.25rem; }
+    /* Rail links */
+    .rail-links { list-style: none; padding: 0; margin: 0; }
+    .rail-links li { margin-bottom: 0.15rem; }
+    .rail-links a {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.32rem 0;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: var(--ink-2);
+        border-bottom: 1px solid transparent;
+        transition: color 0.2s, border-color 0.25s;
+    }
+    .rail-links a:hover { color: var(--accent); border-bottom-color: var(--line); }
+    .rail-links .ext {
+        font-size: 0.68rem;
+        color: var(--muted);
+        transition: transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1), color 0.2s;
+    }
+    .rail-links a:hover .ext { color: var(--accent); transform: translate(2px, -2px); }
+
+    /* ---------- Content ---------- */
+    main { max-width: 40rem; padding-top: 0.35rem; }
+
+    section { scroll-margin-top: 2rem; }
+    section + section { margin-top: 4.5rem; }
+
+    .sec-head {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin: 0 0 1.6rem;
+        padding-bottom: 0.85rem;
+        border-bottom: 1px solid var(--line);
+        font-size: 0.6875rem;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+    .sec-head .num { color: var(--accent); }
+
+    .lede { font-size: 1.1875rem; line-height: 1.6; color: var(--ink); letter-spacing: -0.011em; }
+    p { margin: 0 0 1.15rem; text-wrap: pretty; }
+    p:last-child { margin-bottom: 0; }
+
+    .body-link {
+        color: var(--ink);
+        border-bottom: 1px solid var(--accent);
+        padding-bottom: 0.5px;
+        transition: background-color 0.25s, color 0.2s;
+    }
+    .body-link:hover { background: var(--accent); color: #fff; border-bottom-color: var(--accent); }
+
+    /* Tags */
+    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.6rem; padding: 0; list-style: none; }
+    .tags li {
+        font-size: 0.6875rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        padding: 0.3rem 0.6rem;
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .tags li:hover { color: var(--ink); border-color: var(--muted); }
 
     /* ---------- News ---------- */
     .news { list-style: none; padding: 0; margin: 0; }
     .news li {
         display: grid;
-        grid-template-columns: 5.75rem 1fr;
-        gap: 0 1.4rem;
-        align-items: baseline;
-        padding: 1.15rem 0;
-        border-bottom: 1px solid var(--line-soft);
-        font-size: 1.06rem;
-        line-height: 1.6;
-        color: var(--ink-soft);
+        grid-template-columns: 5.25rem minmax(0, 1fr);
+        gap: 0 1.5rem;
+        padding: 1.05rem 0;
+        border-bottom: 1px solid var(--line-2);
+        font-size: 0.96875rem;
+        line-height: 1.62;
     }
     .news li:first-child { padding-top: 0; }
-    .news li:last-child { border-bottom: 0; padding-bottom: 0; }
-    .date {
-        display: inline-block;
-        font-family: 'Fraunces', serif;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        color: var(--accent);
-        background: var(--paper-deep);
-        border: 1px solid var(--line-soft);
-        border-radius: 999px;
-        padding: 0.18rem 0.7rem;
-        white-space: nowrap;
-        text-align: center;
-    }
-    @media (max-width: 34rem) {
-        .news li { grid-template-columns: 1fr; gap: 0.55rem 0; }
-        .date { justify-self: start; }
-    }
-
-    /* ---------- Contact ---------- */
-    .contact-grid {
-        display: grid;
-        gap: 0.4rem 1.4rem;
-    }
-    .contact-grid p {
-        display: grid;
-        grid-template-columns: 5.75rem 1fr;
-        gap: 0 1.4rem;
-        align-items: baseline;
-        margin: 0;
-    }
-    .contact-grid .label {
-        font-family: 'Fraunces', serif;
-        font-size: 0.74rem;
-        font-weight: 600;
-        letter-spacing: 0.14em;
+    .news li:last-child { border-bottom: 0; }
+    .news .date {
+        font-size: 0.6875rem;
+        letter-spacing: 0.07em;
         text-transform: uppercase;
         color: var(--muted);
+        padding-top: 0.28rem;
+        white-space: nowrap;
     }
-    @media (max-width: 34rem) {
-        .contact-grid p { grid-template-columns: 1fr; gap: 0.15rem 0; }
+    .news li:first-child .date { color: var(--accent); }
+    .ref {
+        font-size: 0.8125rem;
+        color: var(--accent);
+        padding: 0 0.05rem;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+    .ref:hover { border-bottom-color: var(--accent); }
+
+    /* ---------- Publications ---------- */
+    .pubs { list-style: none; padding: 0; margin: 0 0 1.9rem; }
+    .pubs > li {
+        display: grid;
+        grid-template-columns: 5.25rem minmax(0, 1fr);
+        gap: 0 1.5rem;
+        padding: 1.35rem 0;
+        border-bottom: 1px solid var(--line-2);
+    }
+    .pubs > li:first-child { padding-top: 0; }
+    .pubs > li:last-child { border-bottom: 0; }
+
+    .pub-year {
+        font-size: 0.6875rem;
+        letter-spacing: 0.07em;
+        color: var(--muted);
+        padding-top: 0.32rem;
+    }
+    .pub-venue {
+        display: block;
+        font-size: 0.6875rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.45rem;
+    }
+    .pub-title {
+        display: block;
+        font-size: 1.03125rem;
+        font-weight: 600;
+        letter-spacing: -0.014em;
+        line-height: 1.4;
+        color: var(--ink);
+        margin-bottom: 0.4rem;
+        text-wrap: pretty;
+        transition: color 0.2s;
+    }
+    .pub-title:hover { color: var(--accent); }
+    .pub-authors {
+        font-size: 0.875rem;
+        line-height: 1.55;
+        color: var(--muted);
+        margin-bottom: 0.55rem;
+    }
+    .pub-authors .me { color: var(--ink-2); font-weight: 600; }
+    .pub-links { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+    .pub-links a {
+        font-size: 0.6875rem;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 1px;
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .pub-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    .note { font-size: 0.9375rem; color: var(--muted); }
+
+    /* ---------- Contact ---------- */
+    .contact { list-style: none; padding: 0; margin: 0; }
+    .contact li {
+        display: grid;
+        grid-template-columns: 5.25rem minmax(0, 1fr);
+        gap: 0 1.5rem;
+        padding: 0.72rem 0;
+        border-bottom: 1px solid var(--line-2);
+        font-size: 0.96875rem;
+    }
+    .contact li:last-child { border-bottom: 0; }
+    .contact .k {
+        font-size: 0.6875rem;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--muted);
+        padding-top: 0.24rem;
     }
 
     /* ---------- Footer ---------- */
     footer {
-        margin-top: 3.5rem;
-        padding-top: 1.75rem;
-        border-top: 1px solid var(--line-soft);
-        font-size: 0.92rem;
+        grid-column: 1 / -1;
+        margin-top: 5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.5rem 1.5rem;
+        font-size: 0.6875rem;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
         color: var(--muted);
     }
-    footer p { margin: 0; }
+
+    /* ---------- Theme toggle ---------- */
+    .theme-toggle {
+        position: fixed;
+        top: 1.35rem; right: 1.35rem;
+        z-index: 10;
+        width: 2.15rem; height: 2.15rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 1px solid var(--line);
+        border-radius: 3px;
+        background: var(--bg);
+        color: var(--muted);
+        cursor: pointer;
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .theme-toggle:hover { color: var(--ink); border-color: var(--muted); }
+    .theme-toggle svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+    .icon-moon { display: none; }
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) .icon-moon { display: block; }
+        :root:not([data-theme="light"]) .icon-sun  { display: none; }
+    }
+    :root[data-theme="dark"] .icon-moon { display: block; }
+    :root[data-theme="dark"] .icon-sun  { display: none; }
+    :root[data-theme="light"] .icon-sun  { display: block; }
+    :root[data-theme="light"] .icon-moon { display: none; }
+    html:not(.js) .theme-toggle { display: none; }
 
     .sr-only {
         position: absolute; width: 1px; height: 1px;
@@ -385,127 +424,97 @@
         clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
     }
 
-    /* ---------- Entrance animation ---------- */
+    /* ---------- Reveal ---------- */
     @keyframes rise {
-        from { opacity: 0; transform: translateY(14px); }
+        from { opacity: 0; transform: translateY(10px); }
         to   { opacity: 1; transform: translateY(0); }
     }
     html.js .reveal { opacity: 0; }
-    html.js .reveal.in {
-        animation: rise 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-    }
-    .d1 { animation-delay: 0.05s; }
-    .d2 { animation-delay: 0.15s; }
-    .d3 { animation-delay: 0.27s; }
-    .d4 { animation-delay: 0.39s; }
-    .d5 { animation-delay: 0.51s; }
-    .d6 { animation-delay: 0.63s; }
+    html.js .reveal.in { animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards; }
+    .d1 { animation-delay: 0.04s; }
+    .d2 { animation-delay: 0.12s; }
+    .d3 { animation-delay: 0.20s; }
 
-    /* ---------- Publications ---------- */
-    .pub-list { list-style: none; padding: 0; margin: 0 0 1.6rem; }
-    .pub-list li {
-        padding: 1.3rem 1rem;
-        margin-inline: -1rem;
-        border-bottom: 1px solid var(--line-soft);
-        border-radius: 0.5rem;
-        transition: background-color 0.28s ease;
+    /* ---------- Narrow ---------- */
+    @media (max-width: 62rem) {
+        .shell { grid-template-columns: minmax(0, 1fr); gap: 0; }
+        .rail { margin-bottom: 3.25rem; }
+        .portrait { max-width: 8rem; aspect-ratio: 1 / 1; }
+        .rail h1 { font-size: 2.35rem; margin-top: 1.5rem; }
+        .toc { display: none; }
+        .rail-links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+        .rail-links li { margin: 0; }
+        .rail-links a { border-bottom: 1px solid var(--line); }
+        main { max-width: none; }
     }
-    .pub-list li:hover { background-color: var(--paper-tint); }
-    .pub-list li:first-child { padding-top: 0; }
-    .pub-list li:last-child { border-bottom: 0; }
-
-    .pub-venue {
-        display: inline-block;
-        font-family: 'Fraunces', serif;
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        color: var(--accent);
-        background: var(--paper-deep);
-        border: 1px solid var(--line-soft);
-        border-radius: 999px;
-        padding: 0.16rem 0.7rem;
-        margin-bottom: 0.6rem;
+    @media (max-width: 34rem) {
+        .news li, .pubs > li, .contact li { grid-template-columns: minmax(0, 1fr); gap: 0.4rem 0; }
+        .news .date, .pub-year, .contact .k { padding-top: 0; }
     }
-    .pub-title {
-        display: block;
-        font-family: 'Fraunces', serif;
-        font-weight: 500;
-        font-size: 1.18rem;
-        line-height: 1.32;
-        color: var(--ink);
-        background-image: none;
-        margin-bottom: 0.35rem;
-        text-wrap: pretty;
-        transition: color 0.2s;
-    }
-    .pub-title:hover { color: var(--accent); }
-    .pub-authors {
-        font-size: 0.98rem;
-        line-height: 1.5;
-        color: var(--muted);
-        margin-bottom: 0.4rem;
-    }
-    .pub-authors .me { color: var(--ink-soft); font-style: italic; }
-    .pub-links { font-size: 0.9rem; }
-    .pub-links a { margin-right: 1rem; }
-    .scholar-note { font-size: 1.05rem; }
 
     @media (prefers-reduced-motion: reduce) {
         html { scroll-behavior: auto; }
         html.js .reveal { opacity: 1; }
         html.js .reveal.in { animation: none; }
         *, *::before, *::after { transition-duration: 0.01ms !important; }
-        .monogram, nav a:hover, .theme-toggle:hover { transform: none; }
+        .portrait, .rail:hover .portrait { transform: none; }
     }
 
-    /* ---------- Print ---------- */
     @media print {
-        body { background: #fff; color: #000; font-size: 11pt; }
-        body::before, body::after { display: none; }
-        nav, .theme-toggle { display: none; }
-        .container { max-width: none; padding: 0; }
-        a { color: #000; background-image: none; }
-        .pub-links a::after { content: " (" attr(href) ")"; font-size: 8pt; color: #555; }
+        :root { --bg: #fff; --ink: #000; --ink-2: #000; --muted: #444; --line: #ccc; --line-2: #ddd; --accent: #000; }
+        .theme-toggle, .toc { display: none; }
+        .shell { display: block; max-width: none; padding: 0; }
+        .rail { margin-bottom: 2rem; }
+        .portrait { filter: grayscale(1); max-width: 7rem; }
         html.js .reveal { opacity: 1; }
-        main section + section { margin-top: 1.5rem; }
-        .pub-list li, .news li { break-inside: avoid; }
+        section + section { margin-top: 2rem; }
+        .news li, .pubs > li { break-inside: avoid; }
+        .pub-links a::after { content: " " attr(href); font-size: 7pt; letter-spacing: 0; text-transform: none; }
     }
 </style>
 </head>
 <body>
 
-<div class="container">
+<button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle light / dark theme">
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.3M12 19.3v2.3M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.3M19.3 12h2.3M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a7 7 0 0 0 11.1 11.1z"/></svg>
+</button>
 
-    <button class="theme-toggle" type="button" id="theme-toggle" title="Toggle light / dark theme" aria-label="Toggle light or dark theme">
-        <i class="fa-solid fa-sun" aria-hidden="true"></i><i class="fa-solid fa-moon" aria-hidden="true"></i>
-    </button>
+<div class="shell">
 
-    <header id="top">
-        <div class="monogram reveal d1" aria-hidden="true">
-            <img src="mike_zhang.jpg" alt="">
-        </div>
+    <aside class="rail">
+        <img class="portrait reveal d1" src="mike_zhang.jpg" alt="Portrait of Mike Zhang">
         <h1 class="reveal d1">Mike Zhang</h1>
         <p class="role reveal d2">
-            Postdoctoral Researcher <span class="at">at</span><br> University of Copenhagen<br>Pioneer Centre for Artificial Intelligence
+            <strong>Postdoctoral Researcher</strong>
+            University of Copenhagen<br>
+            Pioneer Centre for Artificial Intelligence
         </p>
-        <hr class="accent-rule reveal d2">
-        <nav class="reveal d3" aria-label="Profiles and links">
-            <ul>
-                <li><a href="#top" title="Home"><i class="fa-solid fa-house"></i><span class="sr-only">Home</span></a></li>
-                <li><a href="#publications" title="Publications"><i class="fa-solid fa-book-open"></i><span class="sr-only">Publications</span></a></li>
-                <li><a href="cv-mike-zhang.pdf" title="Full CV (PDF)"><i class="fa-solid fa-file-pdf"></i><span class="sr-only">Full CV (PDF)</span></a></li>
-                <li><a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i><span class="sr-only">Google Scholar</span></a></li>
-                <li><a href="https://github.com/jjzha" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i><span class="sr-only">GitHub</span></a></li>
-                <li><a href="https://linkedin.com/in/jjzha/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
+
+        <hr class="rail-rule reveal d2">
+
+        <nav aria-label="Sections">
+            <ul class="toc reveal d2">
+                <li><a href="#about" class="mono">About</a></li>
+                <li><a href="#news" class="mono">News</a></li>
+                <li><a href="#publications" class="mono">Publications</a></li>
+                <li><a href="#contact" class="mono">Contact</a></li>
             </ul>
         </nav>
-    </header>
+
+        <ul class="rail-links reveal d3">
+            <li><a href="cv-mike-zhang.pdf">Curriculum Vitae <span class="ext" aria-hidden="true">PDF</span></a></li>
+            <li><a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://github.com/jjzha" target="_blank" rel="noopener">GitHub <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://hf.co/jjzha" target="_blank" rel="noopener">Hugging Face <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+            <li><a href="https://linkedin.com/in/jjzha/" target="_blank" rel="noopener">LinkedIn <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+        </ul>
+    </aside>
 
     <main>
-        <section id="about" class="reveal d4">
-            <h2 class="eyebrow">About</h2>
-            <p>
+        <section id="about" class="reveal d2">
+            <h2 class="sec-head mono"><span class="num">01</span> About</h2>
+            <p class="lede">
                 I am a Postdoctoral Researcher at the University of Copenhagen &amp; the Pioneer Centre for
                 Artificial Intelligence in Copenhagen, Denmark. My current research focus is on
                 Multilingual LLM post-training, NLP applications, and the influence of AI on society.
@@ -513,64 +522,92 @@
             <p>
                 Previously, I did a Postdoc at Aalborg University, where I worked on NLP and Education.
                 I completed my Ph.D. in Computer Science at the IT University of Copenhagen, defending my
-                thesis, <em>“<a href="https://arxiv.org/abs/2404.18977" target="_blank" rel="noopener">Computational Job Market Analysis with Natural Language Processing</a>,”</em>
+                thesis, <a class="body-link" href="https://arxiv.org/abs/2404.18977" target="_blank" rel="noopener">Computational Job Market Analysis with Natural Language Processing</a>,
                 in March 2024. I am still very much interested in these topics, so please reach out!
             </p>
+            <ul class="tags mono">
+                <li>Multilingual LLM post-training</li>
+                <li>NLP applications</li>
+                <li>AI &amp; society</li>
+            </ul>
         </section>
 
-        <section id="news" class="reveal d5">
-            <h2 class="eyebrow">Recent News</h2>
+        <section id="news" class="reveal d3">
+            <h2 class="sec-head mono"><span class="num">02</span> Recent News</h2>
             <ul class="news">
-                <li><span class="date">Jul 2026</span><span>I will go to ACL to present <a href="https://aclanthology.org/2026.findings-acl.561/" target="_blank" rel="noopener">[1]</a>, <a href="https://aclanthology.org/2026.acl-long.1527/" target="_blank" rel="noopener">[2]</a>, <a href="https://aclanthology.org/2026.acl-industry.100/" target="_blank" rel="noopener">[3]</a>. See you in San Diego! Feel free to reach out if you are interested in discussing these works.</span></li>
-                <li><span class="date">May 2026</span><span>3 papers accepted at ACL (Main, Findings, and Industry) on factual test-time scaling with knowledge graphs <a href="https://arxiv.org/pdf/2505.11140" target="_blank" rel="noopener">[1]</a>, language identification <a href="https://aclanthology.org/2026.acl-long.1527/" target="_blank" rel="noopener">[2]</a>, and challenges and opportunities in KPI extraction from earnings calls <a href="https://aclanthology.org/2026.acl-industry.100/" target="_blank" rel="noopener">[3]</a>. Congrats to all authors!</span></li>
-                <li><span class="date">Jan 2026</span><span>1 paper accepted at ICLR on Kaleidoscope, a multilingual, multimodal exam dataset for evaluating MLLMs <a href="https://openreview.net/pdf?id=zCYXhSy9UH" target="_blank" rel="noopener">[1]</a>. Congrats Isra!</span></li>
-                <li><span class="date">Dec 2025</span><span>I have joined the University of Copenhagen to work with Desmond Elliott and Ali Basirat.</span></li>
+                <li>
+                    <span class="date mono">Aug 2026</span>
+                    <span>1 paper accepted at EMNLP about cross-lingual contrastive preference tuning on self-generations <a class="ref mono" href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">[1]</a>. See you in Budapest!</span>
+                </li>
+                <li>
+                    <span class="date mono">Jul 2026</span>
+                    <span>I will go to ACL to present <a class="ref mono" href="https://aclanthology.org/2026.findings-acl.561/" target="_blank" rel="noopener">[1]</a>, <a class="ref mono" href="https://aclanthology.org/2026.acl-long.1527/" target="_blank" rel="noopener">[2]</a>, <a class="ref mono" href="https://aclanthology.org/2026.acl-industry.100/" target="_blank" rel="noopener">[3]</a>. See you in San Diego! Feel free to reach out if you are interested in discussing these works.</span>
+                </li>
+                <li>
+                    <span class="date mono">Jan 2026</span>
+                    <span>1 paper accepted at ICLR on Kaleidoscope, a multilingual, multimodal exam dataset for evaluating MLLMs <a class="ref mono" href="https://openreview.net/pdf?id=zCYXhSy9UH" target="_blank" rel="noopener">[1]</a>. Congrats Isra!</span>
+                </li>
+                <li>
+                    <span class="date mono">Dec 2025</span>
+                    <span>I have joined the University of Copenhagen to work with Desmond Elliott and Ali Basirat.</span>
+                </li>
             </ul>
         </section>
 
-        <section id="publications" class="reveal d6">
-            <h2 class="eyebrow">Selected Publications</h2>
-            <ul class="pub-list">
+        <section id="publications" class="reveal d3">
+            <h2 class="sec-head mono"><span class="num">03</span> Selected Publications</h2>
+            <ul class="pubs">
                 <li>
-                    <span class="pub-venue">ArXiv · 2026</span>
-                    <a class="pub-title" href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">CroCo: Cross-Lingual Contrastive Preference Tuning on Self-Generations</a>
-                    <div class="pub-authors"><span class="me">Mike Zhang</span>, Ali Basirat, Desmond Elliott</div>
-                    <div class="pub-links"><a href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">arXiv</a></div>
+                    <span class="pub-year mono">2026</span>
+                    <div>
+                        <span class="pub-venue mono">EMNLP Findings</span>
+                        <a class="pub-title" href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">CroCo: Cross-Lingual Contrastive Preference Tuning on Self-Generations</a>
+                        <div class="pub-authors"><span class="me">Mike Zhang</span>, Ali Basirat, Desmond Elliott</div>
+                        <div class="pub-links mono"><a href="https://arxiv.org/abs/2605.26293" target="_blank" rel="noopener">Arxiv</a></div>
+                    </div>
                 </li>
                 <li>
-                    <span class="pub-venue">ACL Findings · 2026</span>
-                    <a class="pub-title" href="https://aclanthology.org/2026.findings-acl.561/" target="_blank" rel="noopener">Follow the Path: Reasoning over Knowledge Graph Paths to Improve Large Language Model Factuality</a>
-                    <div class="pub-authors"><span class="me">Mike Zhang</span>, Johannes Bjerva, Russa Biswas</div>
-                    <div class="pub-links"><a href="https://aclanthology.org/2026.findings-acl.561/" target="_blank" rel="noopener">ACL Anthology</a></div>
+                    <span class="pub-year mono">2026</span>
+                    <div>
+                        <span class="pub-venue mono">ACL Findings</span>
+                        <a class="pub-title" href="https://aclanthology.org/2026.findings-acl.561/" target="_blank" rel="noopener">Follow the Path: Reasoning over Knowledge Graph Paths to Improve Large Language Model Factuality</a>
+                        <div class="pub-authors"><span class="me">Mike Zhang</span>, Johannes Bjerva, Russa Biswas</div>
+                        <div class="pub-links mono"><a href="https://aclanthology.org/2026.findings-acl.561/" target="_blank" rel="noopener">ACL Anthology</a></div>
+                    </div>
                 </li>
                 <li>
-                    <span class="pub-venue">NAACL · 2022</span>
-                    <a class="pub-title" href="https://aclanthology.org/2022.naacl-main.366/" target="_blank" rel="noopener">SkillSpan: Hard and Soft Skill Extraction from English Job Postings</a>
-                    <div class="pub-authors"><span class="me">Mike Zhang</span>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank</div>
-                    <div class="pub-links"><a href="https://aclanthology.org/2022.naacl-main.366/" target="_blank" rel="noopener">ACL Anthology</a></div>
+                    <span class="pub-year mono">2022</span>
+                    <div>
+                        <span class="pub-venue mono">NAACL</span>
+                        <a class="pub-title" href="https://aclanthology.org/2022.naacl-main.366/" target="_blank" rel="noopener">SkillSpan: Hard and Soft Skill Extraction from English Job Postings</a>
+                        <div class="pub-authors"><span class="me">Mike Zhang</span>, Kristian Nørgaard Jensen, Sif Dam Sonniks, Barbara Plank</div>
+                        <div class="pub-links mono"><a href="https://aclanthology.org/2022.naacl-main.366/" target="_blank" rel="noopener">ACL Anthology</a></div>
+                    </div>
                 </li>
             </ul>
-            <p class="scholar-note">
+            <p class="note">
                 For the full and most up-to-date list, see my
-                <a href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
+                <a class="body-link" href="https://scholar.google.nl/citations?user=Zw6i1v0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
             </p>
         </section>
 
-        <section id="contact" class="reveal d6">
-            <h2 class="eyebrow">Contact</h2>
-            <div class="contact-grid">
-                <p><span class="label">Email</span> <span>mike.zhang<span aria-hidden="true">(at)</span>di.ku.dk</span></p>
-                <p><span class="label">Location</span> <span>Copenhagen, Denmark</span></p>
-                <p><span class="label">Elsewhere</span> <span>
-                    <a href="https://github.com/jjzha" target="_blank" rel="noopener">github.com/jjzha</a> ·
-                    <a href="https://hf.co/jjzha" target="_blank" rel="noopener">hf.co/jjzha</a>
-                </span></p>
-            </div>
+        <section id="contact" class="reveal d3">
+            <h2 class="sec-head mono"><span class="num">04</span> Contact</h2>
+            <ul class="contact">
+                <li><span class="k mono">Email</span> <span class="mono">mike.zhang<span aria-hidden="true">(at)</span>di.ku.dk</span></li>
+                <li><span class="k mono">Location</span> <span>Copenhagen, Denmark</span></li>
+                <li><span class="k mono">Elsewhere</span> <span>
+                    <a class="body-link" href="https://github.com/jjzha" target="_blank" rel="noopener">github.com/jjzha</a>
+                    &nbsp;·&nbsp;
+                    <a class="body-link" href="https://hf.co/jjzha" target="_blank" rel="noopener">hf.co/jjzha</a>
+                </span></li>
+            </ul>
         </section>
     </main>
 
-    <footer class="reveal d6">
-        <p>Last updated June 6, 2026 · Copenhagen</p>
+    <footer class="mono">
+        <span>Mike Zhang — Copenhagen</span>
+        <span class="updated" hidden>Last updated <time id="updated"></time></span>
     </footer>
 
 </div>
@@ -597,21 +634,20 @@
 </script>
 
 <script>
-    /* Theme toggle: follows the system until the visitor chooses. */
+    /* Theme toggle */
     (function () {
         var btn = document.getElementById('theme-toggle');
         if (!btn) return;
         var media = window.matchMedia('(prefers-color-scheme: dark)');
         btn.addEventListener('click', function () {
-            var current = document.documentElement.getAttribute('data-theme')
-                || (media.matches ? 'dark' : 'light');
-            var next = current === 'dark' ? 'light' : 'dark';
+            var cur = document.documentElement.getAttribute('data-theme') || (media.matches ? 'dark' : 'light');
+            var next = cur === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
             try { localStorage.setItem('theme', next); } catch (e) {}
         });
     })();
 
-    /* Reveal sections as they scroll into view. */
+    /* Reveal on scroll */
     (function () {
         var items = document.querySelectorAll('.reveal');
         if (!('IntersectionObserver' in window)) {
@@ -619,24 +655,46 @@
             return;
         }
         var io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('in');
-                    io.unobserve(entry.target);
-                }
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
             });
         }, { threshold: 0.1 });
         items.forEach(function (el) { io.observe(el); });
-
-        /* The staggered delays are for the opening sequence only — anything
-           revealed later on scroll should animate immediately. */
         setTimeout(function () {
             items.forEach(function (el) {
-                if (!el.classList.contains('in')) {
-                    el.classList.remove('d1', 'd2', 'd3', 'd4', 'd5', 'd6');
-                }
+                if (!el.classList.contains('in')) el.classList.remove('d1', 'd2', 'd3');
             });
-        }, 1000);
+        }, 900);
+    })();
+
+    /* Scrollspy for the rail table of contents */
+    (function () {
+        var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+        if (!links.length || !('IntersectionObserver' in window)) return;
+        var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+        var visible = {};
+        var spy = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+            var activeIndex = -1;
+            sections.forEach(function (s, i) { if (s && visible[s.id] && activeIndex === -1) activeIndex = i; });
+            links.forEach(function (a, i) { a.classList.toggle('active', i === activeIndex); });
+        }, { rootMargin: '-10% 0px -55% 0px', threshold: 0 });
+        sections.forEach(function (s) { if (s) spy.observe(s); });
+    })();
+</script>
+
+<script>
+    /* Footer date: read from the page's own Last-Modified header, so it tracks
+       the last deploy instead of needing a hand-edit. Hidden entirely if the
+       browser can't determine a date. */
+    (function () {
+        var t = document.getElementById('updated');
+        if (!t) return;
+        var d = new Date(document.lastModified);
+        if (isNaN(d.getTime())) return;
+        t.dateTime = d.toISOString().slice(0, 10);
+        t.textContent = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        if (t.parentNode) t.parentNode.hidden = false;
     })();
 </script>
 
