@@ -137,11 +137,8 @@
         object-fit: cover;
         object-position: center 22%;
         border-radius: 3px;
-        filter: grayscale(1) contrast(1.04);
-        transition: filter 0.5s ease, transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
         box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px var(--shadow);
     }
-    .rail:hover .portrait { filter: grayscale(0) contrast(1); transform: translateY(-2px); }
 
     .rail h1 {
         font-size: 2rem;
@@ -457,7 +454,7 @@
         html.js .reveal { opacity: 1; }
         html.js .reveal.in { animation: none; }
         *, *::before, *::after { transition-duration: 0.01ms !important; }
-        .portrait, .rail:hover .portrait { transform: none; }
+        .portrait { transform: none; }
     }
 
     @media print {
@@ -465,7 +462,7 @@
         .theme-toggle, .toc { display: none; }
         .shell { display: block; max-width: none; padding: 0; }
         .rail { margin-bottom: 2rem; }
-        .portrait { filter: grayscale(1); max-width: 7rem; }
+        .portrait { max-width: 7rem; }
         html.js .reveal { opacity: 1; }
         section + section { margin-top: 2rem; }
         .news li, .pubs > li { break-inside: avoid; }
@@ -667,19 +664,47 @@
         }, 900);
     })();
 
-    /* Scrollspy for the rail table of contents */
+    /* Scrollspy for the rail table of contents.
+
+       Position-based rather than IntersectionObserver: the final section sits at
+       the bottom of the page, so it can never scroll far enough up to cross a
+       detection band in the upper viewport - the page runs out of scroll first.
+       Hence the explicit "scrolled to the bottom" case, which always wins. */
     (function () {
-        var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
-        if (!links.length || !('IntersectionObserver' in window)) return;
-        var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
-        var visible = {};
-        var spy = new IntersectionObserver(function (entries) {
-            entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
-            var activeIndex = -1;
-            sections.forEach(function (s, i) { if (s && visible[s.id] && activeIndex === -1) activeIndex = i; });
-            links.forEach(function (a, i) { a.classList.toggle('active', i === activeIndex); });
-        }, { rootMargin: '-10% 0px -55% 0px', threshold: 0 });
-        sections.forEach(function (s) { if (s) spy.observe(s); });
+        var pairs = [];
+        Array.prototype.forEach.call(document.querySelectorAll('.toc a'), function (a) {
+            var section = document.querySelector(a.getAttribute('href'));
+            if (section) pairs.push({ link: a, section: section });
+        });
+        if (!pairs.length) return;
+
+        var ticking = false;
+
+        function update() {
+            ticking = false;
+            var scrolled = window.pageYOffset;
+            var line = scrolled + window.innerHeight * 0.3;
+            var atBottom = window.innerHeight + scrolled >= document.documentElement.scrollHeight - 2;
+            var idx = 0;
+
+            if (atBottom) {
+                idx = pairs.length - 1;
+            } else {
+                for (var i = 0; i < pairs.length; i++) {
+                    if (pairs[i].section.getBoundingClientRect().top + scrolled <= line) idx = i;
+                }
+            }
+            pairs.forEach(function (p, i) { p.link.classList.toggle('active', i === idx); });
+        }
+
+        function onScroll() {
+            if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+        }
+
+        update();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll);
+        window.addEventListener('hashchange', onScroll);
     })();
 </script>
 
